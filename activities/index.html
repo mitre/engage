@@ -1,0 +1,98 @@
+---
+layout: default-data
+title: Activities
+custom_css: default
+breadcrumb: Activities
+---
+
+<!-- Start Content -->
+<h1>{{ page.title }}</h1>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <p>
+        Activities are the concrete techniques you employ to progress towards achieving your big objectives.
+        <p>
+        Activities in Engage can be Engagement Activities or Strategic Activities. Strategic Activities help you to focus on the steps you must complete before, during, and after an operation to ensure that your activities are aligned with your overall strategy. Strategic Activities help ensure that your operations of today inform your operations of tomorrow. All Strategic Activities have an ID that starts with SAC. Engagement Activities help you to identify what actions you would like to take against your adversary and help you to drive progress towards that impact. All Engagement Activities have an ID that starts with EAC.
+        <br>
+        <p>
+        Check out each of the various Activities below for an in-depth discussion on each specific Activity. 
+        <br>
+      </p>
+    </div>
+</div>
+<div id="strategic">
+<h2>Strategic Activities</h2>
+<table class="table table-bordered table-hover">
+    <thead></thead><tr><th> Name</th><th>Description</th><th>ID</th></tr></thead>
+    <tbody>
+        {%- for activity in site.data.activities -%}
+        {%- if site.data.activity_details[activity.id].type == "Strategic" -%}
+            <tr>
+                <td><a href="{{ site.baseurl }}/activities/{{ activity.id }}">{{ activity.name }}</a></td>
+                <td>{{ activity.description }}</td>
+                <td>{{ activity.id }}</td>
+            </tr>
+        {%- endif -%}
+        {%- endfor -%}
+    </tbody>
+</table>
+</div>
+<div id="engagement">
+<h2>Engagement Activities</h2>
+<table class="table table-bordered table-hover">
+    <thead></thead><tr><th> Name</th><th>Description</th><th>ID</th></tr></thead>
+    <tbody>
+        {%- for activity in site.data.activities -%}
+        {%- if site.data.activity_details[activity.id].type == "Engagement" -%}
+
+            <tr>
+                <td><a href="{{ site.baseurl }}/activities/{{ activity.id }}">{{ activity.name }}</a></td>
+                <td>{{ activity.description }}</td>
+                <td>{{ activity.id }}</td>
+            </tr>
+        {%- endif -%}
+
+        {%- endfor -%}
+    </tbody>
+</table>
+</div>
+<script type="text/javascript"  >
+function filter_tables(val_to_hide){
+         var x = document.getElementById(val_to_hide);
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+      }
+
+      
+function GetURLParameter(sParam)
+{
+
+ 
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+    
+var show = GetURLParameter('show');
+
+if (show === "strategic"){
+ filter_tables("engagement")
+
+} else if (show === "engagement") {
+filter_tables("strategic")
+   
+}
+
+</script>
+<!-- End Content -->

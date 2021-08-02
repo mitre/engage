@@ -1,0 +1,100 @@
+---
+layout: default-data
+title: Goals
+custom_css: default
+breadcrumb: Goals
+---
+
+<!-- Start Content -->
+<h1>{{ page.title }}</h1>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-8">
+      <p>
+
+        Goals are the big objective you would like to accomplish. Selecting a goal should be the first step in any adversary engagement operation. Once you have selected your goal, all other activities should be selected to drive progress towards that goal. 
+
+        <br>
+        <p>
+        Goals in Engage can be Engagement Goals or Strategic Goals. Strategic Goals help you to focus on the steps you must complete before, during, and after an operation to ensure that your activities are aligned with your overall strategy. Strategic Goals ensure that your operations of today inform your operations of tomorrow. All Strategic Goals have an ID that starts with SGO. Engagement Goals help you to identify what actions you would like to take against your adversary and help you to drive progress towards that impact. All Engagement Goals have an ID that starts with EGO.
+        <br>
+        <p>
+        Check out each of the various goals below for an in-depth discussion on each specific goal. 
+        <br>
+    </div>
+</div>
+<div id="strategic">
+<h2>Strategic Goals</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr><th>Name</th><th>Description</th><th>ID</th></tr>
+    </thead>
+    <tbody>
+        {%- for goal in site.data.goals-%}
+            {%- if site.data.goal_details[goal.id].type == "Strategic" -%}
+                <tr>
+                    <td><a href="{{ site.baseurl }}/goals/{{ goal.id }}">{{ goal.name }}</a></td>
+                    <td>{{ goal.description }}</td>
+                    <td>{{ goal.id }}</td>
+                </tr>
+            {%- endif -%}
+        {%- endfor -%}
+    </tbody>
+</table>
+</div>
+<div id="engagement">
+<h2>Engagement Goals</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr><th>Name</th><th>Description</th><th>ID</th></tr>
+    </thead>
+    <tbody>
+        {%- for goal in site.data.goals -%}
+            {%- if site.data.goal_details[goal.id].type == "Engagement" -%}
+                <tr>
+                    <td><a href="{{ site.baseurl }}/goals/{{ goal.id }}">{{ goal.name }}</a></td>
+                    <td>{{ goal.description }}</td>
+                    <td>{{ goal.id }}</td>
+                </tr>
+            {%- endif -%}
+        {%- endfor -%}
+    </tbody>
+</table>
+</div>
+<script type="text/javascript"  >
+function filter_tables(val_to_hide){
+         var x = document.getElementById(val_to_hide);
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+      }
+
+      
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+    
+var show = GetURLParameter('show');
+
+if (show === "strategic"){
+ filter_tables("engagement")
+
+} else if (show === "engagement") {
+filter_tables("strategic")
+   
+}
+
+</script>
+<!-- End Content -->
+ 

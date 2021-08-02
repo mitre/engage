@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start Page Head -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="https://www.mitre.org/sites/all/themes/mitre/favicon.ico?ref=engage&ref_host=http%3A%2F%2Flocalhost%3A4000&ref_path=%2Fresources%2Fshield.html" type="image/x-icon">
+        
+        <title>What Happened to Shield</title>
+        
+        <!-- url_path: /resources/shield.html -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/assets/css/bootstrap-glyphicon.min.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css?a6820e0c">
+        
+</head>
+<!-- End Page Head-->
+<!-- Start Body -->
+<body>
+<!-- Start Body Container -->
+    <div class="body_container_relative">
+        <!-- Start  Content Container -->
+        <div class="content_container">
+            <!-- Start Nav -->
+            <nav class='navbar navbar-expand-lg navbar-dark bg-primary fixed-top'>
+                <!-- <div class="d-none d-m-block d-lg-block d-xl-block">
+                    <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#sidebar' aria-controls='sidebar' aria-expanded='false' aria-label='Toggle navigation'>
+                        <span id="sidebarCollapse" class='navbar-toggler-icon'></span>
+                    </button>
+                </div>
+                <div class="d-lg-none">
+                    <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                        <span id="navbarCollapser" class='navbar-toggler-icon'></span>
+                    </button>
+                </div> -->
+                <a class='navbar-brand' href='/'><img src="/assets/img/engage_logo_white.png" class="engage-logo"></a>
+                <div class='collapse navbar-collapse' id='navbarCollapse'>
+                    <ul class='nav nav-tabs ml-auto'>
+                                <li class="nav-item"><a href="/matrix/"  class="nav-link" ><b>Matrix</b></a></li>
+                                                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Goals</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/goals/?show=strategic">Strategic</a>
+                                        <a class="dropdown-item" href="/goals/?show=engagement">Engagement</a>
+                                        <a class="dropdown-item" href="/goals/">All</a>
+                                       <!--  <a class="dropdown-item" href="/strategicgoals">Strategic Goals</a>
+                                        <a class="dropdown-item" href="/engagementgoals">Engagement Goals</a> -->
+                                        <hr class="my-3 bg-light" /><a class="dropdown-item" href="/goals/EGO0001/">Expose</a><a class="dropdown-item" href="/goals/EGO0002/">Affect</a><a class="dropdown-item" href="/goals/EGO0003/">Elicit</a><a class="dropdown-item" href="/goals/SGO0001/">Prepare</a><a class="dropdown-item" href="/goals/SGO0002/">Understand</a></div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Approaches</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/approaches/?show=strategic">Strategic</a>
+                                        <a class="dropdown-item" href="/approaches/?show=engagement">Engagement</a>
+                                        <a class="dropdown-item" href="/approaches/">All</a>
+                                       <!--  <a class="dropdown-item" href="/strategicapproaches">Strategic Approaches</a>
+                                        <a class="dropdown-item" href="/engagementapproaches">Engagement Approaches</a> -->
+                                        <hr class="my-3 bg-light" /><a class="dropdown-item" href="/approaches/EAP0001/">Collection</a><a class="dropdown-item" href="/approaches/EAP0002/">Detection</a><a class="dropdown-item" href="/approaches/EAP0003/">Prevention</a><a class="dropdown-item" href="/approaches/EAP0004/">Direction</a><a class="dropdown-item" href="/approaches/EAP0005/">Disruption</a><a class="dropdown-item" href="/approaches/EAP0006/">Reassurance</a><a class="dropdown-item" href="/approaches/EAP0007/">Motivation</a><a class="dropdown-item" href="/approaches/SAP0001/">Planning</a><a class="dropdown-item" href="/approaches/SAP0002/">Analysis</a></div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Activities</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/activities/?show=strategic">Strategic</a>
+                                        <a class="dropdown-item" href="/activities/?show=engagement">Engagement</a>
+                                        <a class="dropdown-item" href="/activities/">All</a>
+                                       <!--  <a class="dropdown-item" href="/strategicapproaches">Strategic Approaches</a>
+                                        <a class="dropdown-item" href="/engagementapproaches">Engagement Approaches</a> -->
+                                       <!--  <hr class="my-3 bg-light" /><a class="dropdown-item" href="/activities/EAC0001/">API Monitoring</a><a class="dropdown-item" href="/activities/EAC0002/">Network Monitoring</a><a class="dropdown-item" href="/activities/EAC0003/">System Activity Monitoring</a><a class="dropdown-item" href="/activities/EAC0004/">Network Analysis</a><a class="dropdown-item" href="/activities/EAC0005/">Decoy Artifacts and Systems</a><a class="dropdown-item" href="/activities/EAC0006/">Application Diversity</a><a class="dropdown-item" href="/activities/EAC0007/">Network Diversity</a><a class="dropdown-item" href="/activities/EAC0008/">Burn-In</a><a class="dropdown-item" href="/activities/EAC0009/">Email Manipulation</a><a class="dropdown-item" href="/activities/EAC0010/">Peripheral Management</a><a class="dropdown-item" href="/activities/EAC0011/">Pocket Litter</a><a class="dropdown-item" href="/activities/EAC0012/">Personas</a><a class="dropdown-item" href="/activities/EAC0013/">Detonate Malware</a><a class="dropdown-item" href="/activities/EAC0014/">Software Manipulation</a><a class="dropdown-item" href="/activities/EAC0015/">Information Manipulation</a><a class="dropdown-item" href="/activities/EAC0016/">Network Manipulation</a><a class="dropdown-item" href="/activities/EAC0017/">Hardware Manipulation</a><a class="dropdown-item" href="/activities/EAC0018/">Security Controls</a><a class="dropdown-item" href="/activities/EAC0019/">Baseline</a><a class="dropdown-item" href="/activities/EAC0020/">Isolation</a><a class="dropdown-item" href="/activities/EAC0021/">Migrate Attack Vector</a><a class="dropdown-item" href="/activities/EAC0022/">Artifact Diversity</a><a class="dropdown-item" href="/activities/SAC0001/">Strategic Goal</a><a class="dropdown-item" href="/activities/SAC0002/">Persona Creation</a><a class="dropdown-item" href="/activities/SAC0003/">Storyboarding</a><a class="dropdown-item" href="/activities/SAC0004/">Develop Threat Model</a><a class="dropdown-item" href="/activities/SAC0005/">Define Exit Criteria</a><a class="dropdown-item" href="/activities/SAC0006/">Hotwash</a><a class="dropdown-item" href="/activities/SAC0007/">Refine Operation Activities</a><a class="dropdown-item" href="/activities/SAC0008/">Distill Intelligence</a><a class="dropdown-item" href="/activities/SAC0009/">Inform Threat Model</a>-->
+                                    </div>
+                                </li>
+                                 <!-- <li class="nav-item"><a href="/activities/?filter=strategic"  class="nav-link" ><b>Activities</b></a></li> -->
+                                 <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Activities</b>
+                                    </a>
+
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/activities">All</a>
+                                        <a class="dropdown-item" href="/strategicactivities">Strategic Activities</a>
+                                        <a class="dropdown-item" href="/engagementactivities">Engagement Activities</a>
+                                      
+                                    </div>
+                                </li> -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>ATT&CK&#174 Mapping</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/attack_mapping/">Overview</a>
+                                        <a class="dropdown-item" href="/attack_groups/">ATT&CK Groups</a>
+                                        <hr class="my-3 bg-light" />
+                                        <a class="dropdown-item" href="/attack_mapping/TA0043/">Reconnaissance</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0042/">Resource Development</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0001/">Initial Access</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0002/">Execution</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0003/">Persistence</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0004/">Privilege Escalation</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0005/">Defense Evasion</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0006/">Credential Access</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0007/">Discovery</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0008/">Lateral Movement</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0009/">Collection</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0010/">Exfiltration</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0011/">Command and Control</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0040/">Impact</a>
+                                        <hr class="my-3 bg-light" />
+                                        <a class="dropdown-item" href="/attack_mapping/mapping_all.html">Complete Mapping</a>
+                                    </div>
+                                </li>
+                            
+                        
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="/resources/" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Resources</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/resources/getting-started">Getting Started</a>
+                                        <a class="dropdown-item" href="/resources/shield">Moving from Shield to Engage</a>
+                                        <a class="dropdown-item" href="/resources/faq">FAQ</a>
+                                        <a class="dropdown-item" href="/resources/related-projects">Related Projects</a>
+                                        <a class="dropdown-item" href="/resources/contribute">Contribute</a>
+                                        <a class="dropdown-item" href="/resources/updates">Updates</a>
+                                        <a class="dropdown-item" href="/resources/contact">Contact Us</a>
+                                    </div>
+                                </li>
+                                <!-- <li class="nav-item"><a href="https://medium.com/mitre-shield"  class="nav-link" target="_blank"><b>Blog</b><img class="external-icon" src="/assets/img/external-site.svg"></a></li> -->
+                        <li class="nav-item">
+                            <form id="site-search" class="form-inline my-2 my-lg-0">
+                                <input id="search-term" class="form-control mr-sm-2" type="text" placeholder="Search">
+                                <button class="btn btn-secondary my-2 my-sm-0" data-toggle="modal" data-target="#search-modal" type="submit">Search</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Nav -->
+            <!-- Start Banner -->
+
+            
+
+            <div class="alert alert-success text-center">
+                <strong>MITRE Shield is now MITRE Engage v0.9 Beta.</strong>
+            </div>
+            
+            <!-- End Banner -->
+            <!-- Start Side Nav -->
+            <!-- <div class="wrapper">
+                <nav id="sidebar" class="collapse overflow-auto disable-scrollbars bg-primary">
+                    <div class="sidebar nav px-2" id="v-tab" role="tablist" aria-orientation="vertical">
+                        <span class="heading text-white" id="v-home-tab" aria-selected="false">Active Defense Approaches</span><div id="DTA0001" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0001"><span class="text-white">Channel</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0001-header" data-toggle="collapse" data-target="#DTA0001-body" aria-expanded="false" aria-controls="DTA0001-body">
+                                </div>
+                            </div>
+                            <div id="DTA0001-body" class="sidenav-body collapse" aria-labelledby="DTA0001-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0001">
+                                        <a href="/activities/DTE0001/"><span class="text-white">Admin Access</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0003">
+                                        <a href="/activities/DTE0003/"><span class="text-white">API Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0013">
+                                        <a href="/activities/DTE0013/"><span class="text-white">Decoy Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0015">
+                                        <a href="/activities/DTE0015/"><span class="text-white">Decoy Persona</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0016">
+                                        <a href="/activities/DTE0016/"><span class="text-white">Decoy Process</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0018">
+                                        <a href="/activities/DTE0018/"><span class="text-white">Detonate Malware</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0023">
+                                        <a href="/activities/DTE0023/"><span class="text-white">Migrate Attack Vector</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0025">
+                                        <a href="/activities/DTE0025/"><span class="text-white">Network Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0029">
+                                        <a href="/activities/DTE0029/"><span class="text-white">Peripheral Management</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0030">
+                                        <a href="/activities/DTE0030/"><span class="text-white">Pocket Litter</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0002" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0002"><span class="text-white">Collect</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0002-header" data-toggle="collapse" data-target="#DTA0002-body" aria-expanded="false" aria-controls="DTA0002-body">
+                                </div>
+                            </div>
+                            <div id="DTA0002-body" class="sidenav-body collapse" aria-labelledby="DTA0002-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0003">
+                                        <a href="/activities/DTE0003/"><span class="text-white">API Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0005">
+                                        <a href="/activities/DTE0005/"><span class="text-white">Backup and Recovery</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0018">
+                                        <a href="/activities/DTE0018/"><span class="text-white">Detonate Malware</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0019">
+                                        <a href="/activities/DTE0019/"><span class="text-white">Email Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0021">
+                                        <a href="/activities/DTE0021/"><span class="text-white">Hunting</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0025">
+                                        <a href="/activities/DTE0025/"><span class="text-white">Network Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0027">
+                                        <a href="/activities/DTE0027/"><span class="text-white">Network Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0028">
+                                        <a href="/activities/DTE0028/"><span class="text-white">PCAP Collection</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0029">
+                                        <a href="/activities/DTE0029/"><span class="text-white">Peripheral Management</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0031">
+                                        <a href="/activities/DTE0031/"><span class="text-white">Protocol Decoder</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0034">
+                                        <a href="/activities/DTE0034/"><span class="text-white">System Activity Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0003" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0003"><span class="text-white">Contain</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0003-header" data-toggle="collapse" data-target="#DTA0003-body" aria-expanded="false" aria-controls="DTA0003-body">
+                                </div>
+                            </div>
+                            <div id="DTA0003-body" class="sidenav-body collapse" aria-labelledby="DTA0003-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0001">
+                                        <a href="/activities/DTE0001/"><span class="text-white">Admin Access</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0006">
+                                        <a href="/activities/DTE0006/"><span class="text-white">Baseline</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0018">
+                                        <a href="/activities/DTE0018/"><span class="text-white">Detonate Malware</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0020">
+                                        <a href="/activities/DTE0020/"><span class="text-white">Hardware Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0022">
+                                        <a href="/activities/DTE0022/"><span class="text-white">Isolation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0023">
+                                        <a href="/activities/DTE0023/"><span class="text-white">Migrate Attack Vector</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0004" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0004"><span class="text-white">Detect</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0004-header" data-toggle="collapse" data-target="#DTA0004-body" aria-expanded="false" aria-controls="DTA0004-body">
+                                </div>
+                            </div>
+                            <div id="DTA0004-body" class="sidenav-body collapse" aria-labelledby="DTA0004-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0003">
+                                        <a href="/activities/DTE0003/"><span class="text-white">API Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0006">
+                                        <a href="/activities/DTE0006/"><span class="text-white">Baseline</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0007">
+                                        <a href="/activities/DTE0007/"><span class="text-white">Behavioral Analytics</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0013">
+                                        <a href="/activities/DTE0013/"><span class="text-white">Decoy Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0015">
+                                        <a href="/activities/DTE0015/"><span class="text-white">Decoy Persona</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0019">
+                                        <a href="/activities/DTE0019/"><span class="text-white">Email Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0021">
+                                        <a href="/activities/DTE0021/"><span class="text-white">Hunting</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0022">
+                                        <a href="/activities/DTE0022/"><span class="text-white">Isolation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0027">
+                                        <a href="/activities/DTE0027/"><span class="text-white">Network Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0028">
+                                        <a href="/activities/DTE0028/"><span class="text-white">PCAP Collection</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0030">
+                                        <a href="/activities/DTE0030/"><span class="text-white">Pocket Litter</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0031">
+                                        <a href="/activities/DTE0031/"><span class="text-white">Protocol Decoder</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0033">
+                                        <a href="/activities/DTE0033/"><span class="text-white">Standard Operating Procedure</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0034">
+                                        <a href="/activities/DTE0034/"><span class="text-white">System Activity Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0035">
+                                        <a href="/activities/DTE0035/"><span class="text-white">User Training</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0005" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0005"><span class="text-white">Disrupt</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0005-header" data-toggle="collapse" data-target="#DTA0005-body" aria-expanded="false" aria-controls="DTA0005-body">
+                                </div>
+                            </div>
+                            <div id="DTA0005-body" class="sidenav-body collapse" aria-labelledby="DTA0005-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0001">
+                                        <a href="/activities/DTE0001/"><span class="text-white">Admin Access</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0005">
+                                        <a href="/activities/DTE0005/"><span class="text-white">Backup and Recovery</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0006">
+                                        <a href="/activities/DTE0006/"><span class="text-white">Baseline</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0007">
+                                        <a href="/activities/DTE0007/"><span class="text-white">Behavioral Analytics</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0019">
+                                        <a href="/activities/DTE0019/"><span class="text-white">Email Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0020">
+                                        <a href="/activities/DTE0020/"><span class="text-white">Hardware Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0022">
+                                        <a href="/activities/DTE0022/"><span class="text-white">Isolation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0033">
+                                        <a href="/activities/DTE0033/"><span class="text-white">Standard Operating Procedure</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0035">
+                                        <a href="/activities/DTE0035/"><span class="text-white">User Training</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0006" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0006"><span class="text-white">Facilitate</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0006-header" data-toggle="collapse" data-target="#DTA0006-body" aria-expanded="false" aria-controls="DTA0006-body">
+                                </div>
+                            </div>
+                            <div id="DTA0006-body" class="sidenav-body collapse" aria-labelledby="DTA0006-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0001">
+                                        <a href="/activities/DTE0001/"><span class="text-white">Admin Access</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0007">
+                                        <a href="/activities/DTE0007/"><span class="text-white">Behavioral Analytics</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0008">
+                                        <a href="/activities/DTE0008/"><span class="text-white">Burn-In</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0013">
+                                        <a href="/activities/DTE0013/"><span class="text-white">Decoy Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0015">
+                                        <a href="/activities/DTE0015/"><span class="text-white">Decoy Persona</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0025">
+                                        <a href="/activities/DTE0025/"><span class="text-white">Network Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0029">
+                                        <a href="/activities/DTE0029/"><span class="text-white">Peripheral Management</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0030">
+                                        <a href="/activities/DTE0030/"><span class="text-white">Pocket Litter</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0007" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0007"><span class="text-white">Legitimize</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0007-header" data-toggle="collapse" data-target="#DTA0007-body" aria-expanded="false" aria-controls="DTA0007-body">
+                                </div>
+                            </div>
+                            <div id="DTA0007-body" class="sidenav-body collapse" aria-labelledby="DTA0007-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0008">
+                                        <a href="/activities/DTE0008/"><span class="text-white">Burn-In</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0013">
+                                        <a href="/activities/DTE0013/"><span class="text-white">Decoy Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0015">
+                                        <a href="/activities/DTE0015/"><span class="text-white">Decoy Persona</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0016">
+                                        <a href="/activities/DTE0016/"><span class="text-white">Decoy Process</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0025">
+                                        <a href="/activities/DTE0025/"><span class="text-white">Network Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0030">
+                                        <a href="/activities/DTE0030/"><span class="text-white">Pocket Litter</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0008" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0008"><span class="text-white">Test</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0008-header" data-toggle="collapse" data-target="#DTA0008-body" aria-expanded="false" aria-controls="DTA0008-body">
+                                </div>
+                            </div>
+                            <div id="DTA0008-body" class="sidenav-body collapse" aria-labelledby="DTA0008-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0001">
+                                        <a href="/activities/DTE0001/"><span class="text-white">Admin Access</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0003">
+                                        <a href="/activities/DTE0003/"><span class="text-white">API Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0005">
+                                        <a href="/activities/DTE0005/"><span class="text-white">Backup and Recovery</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0013">
+                                        <a href="/activities/DTE0013/"><span class="text-white">Decoy Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0015">
+                                        <a href="/activities/DTE0015/"><span class="text-white">Decoy Persona</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0018">
+                                        <a href="/activities/DTE0018/"><span class="text-white">Detonate Malware</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0023">
+                                        <a href="/activities/DTE0023/"><span class="text-white">Migrate Attack Vector</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0025">
+                                        <a href="/activities/DTE0025/"><span class="text-white">Network Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0029">
+                                        <a href="/activities/DTE0029/"><span class="text-white">Peripheral Management</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0030">
+                                        <a href="/activities/DTE0030/"><span class="text-white">Pocket Litter</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div></div>
+                </nav>
+            </div> -->
+            <!-- End Side Nav -->
+            <!-- Start Breadcrumb -->
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item"><a href="/">Home</a></li></ol>
+                           
+            <!-- End Breadcrumb -->
+            <!-- Start Main Content Div -->
+            <div class="container-fluid">
+            <!-- STARTSEARCH -->
+
+
+
+<!-- Start Content -->
+<div class="container pb-3 uniform-block">
+<h2 id="how-does-engage-differ-from-shield">How Does Engage Differ from Shield?</h2>
+
+<p>MITRE Engage replaces the MITRE Shield knowledge base. Based on technical feedback from the cyber community, we've streamlined Shield to focus on the areas of denial, deception, and adversary engagement. By bookending these Engagement Activities with strategic planning and analysis, we hope that MITRE Engage will help organizations to better plan and implement real-world adversary engagement strategies.</p>
+
+<p>We're aware that the change from Shield to Engage will create the need for major re-design of processes and tooling. We think these changes are necessary to help cyber practitioners, leaders, and vendors understand the tools and strategies available to them to build adversary engagement operations.</p>
+
+<p>To ensure that MITRE Engage keeps a focus on strategic planning, we have implemented the following changes:</p>
+
+<ol>
+  <li>
+    <p><strong>Decreased the number of activities and, in places, broadened the scope of individual activities.</strong></p>
+
+    <p>For example, we have folded the Shield Techniques of Decoy Account, Decoy Content, Decoy Credentials, Decoy Process, and Decoy Systems into a single Activity: Decoy Artifacts and Systems. Each of these Shield Techniques may look very different in implementation. However, we believe the reason a defender may utilize one of them, and the effect the activity may have on the adversary, is shared across the various implementations. For example, a defender may use a Decoy Account or Decoy Content as a tripwire. In either case, the defender hopes to expose adversary movement. This release of Engage seeks to abstract away, to a degree, activity implementations to allow the defender to focus on how the activity can impact the adversary and drive progress towards an intended outcome. In future Engage releases we hope to provide more details into specific implementations of a given Activity.</p>
+  </li>
+  <li>
+    <p><strong>Removed the concepts of Procedures, Use Cases, and Opportunity Spaces.</strong></p>
+
+    <p>These changes were an intentional adjustment to remove the focus from individual activities, and instead, focus on how these activities fit into the context of larger strategic objectives. Once we have fully fleshed out this emphasis on strategic planning and analysis, we would like to revisit the idea of Engagement Activities to expand the knowledge base and provide a deeper dive into various implementations and opportunities each activity offers. In the very near future, we would like to introduce the concept of References. References are intended to provide proven, real-world examples of Activity implementations. We are looking to the community to help curate these References. <a href="/resources/contribute">Click here</a> to learn more about how to contribute References and other data to Engage.</p>
+  </li>
+  <li>
+    <p><strong>Changed the terms <em>Tactics</em> and <em>Techniques</em> to <em>Approaches</em> and <em>Activities</em></strong>.</p>
+
+    <p>We wanted to remove any confusion between what we call Approaches and Activities in Engage versus ATT&amp;CK Tactics or Techniques. Additionally, we have added the concept of <em>Goals</em> as a layer above Approaches. We have also divided the Engage Goals, Approaches, and Activities into two categories: Strategic actions and Engagement actions. All these changes were made in order to build strategic planning into the foundation of Engage. For full definitions for each of these actions, <a href="/resources/structure">click here</a>.</p>
+  </li>
+  <li>
+    <p><strong>Added the concept of Adversary Vulnerabilities</strong>.</p>
+
+    <p>Adversary Vulnerabilities are the weaknesses an adversary unintentionally exposes when they engage in a particular behavior. The defender has an opportunity to impact the adversary by taking advantage of such a vulnerability. We have chosen to include Adversary Vulnerabilities in place of Opportunity Spaces to make adversary behavior a focal point of Engage. We feel that this framing helps the defender keep the adversary, and the adversary's behavior, at the center of every operation.</p>
+  </li>
+</ol>
+
+<h3 id="why-did-we-make-these-changes">Why Did We Make These Changes?</h3>
+
+<p>We feel strongly that strategic planning and analysis must be foundational components of every adversary engagement operation. MITRE Engage allows the defender to view the same expertise captured in the Shield knowledge base through this lens of planning and analysis.</p>
+
+<h3 id="why-the-name-change">Why the Name Change?</h3>
+
+<p>While Shield was an active defense knowledge base, MITRE Engage has tightened the focus exclusively to denial, deception, and adversary engagement. We feel that the name Engage more accurately represents this new, more streamlined focus.</p>
+
+<h3 id="how-do-i-switch-from-shield-to-engage">How Do I Switch from Shield to Engage?</h3>
+
+<p>As we transition from MITRE Shield to MITRE Engage, you may be asking yourself, “Where do I start?” Below is a step-by-step guide for transitioning from Shield to Engage.</p>
+
+<ol>
+  <li><strong>Implement key changes to the Engage structure:</strong>
+    <ul>
+      <li>Tactics have been renamed Approaches</li>
+      <li>Techniques have been renamed Activities</li>
+      <li>Goals have been added as a category above Approaches</li>
+      <li>Each of these categories has been broken into two sets with unique IDs, Strategic Goals/Approaches/Activities and Engagement Goals/Approaches/Activities. The overall structure is: Activities are a subset of Approaches, Approaches are a subset of Goals.</li>
+    </ul>
+  </li>
+  <li><strong>Remap all the Activities.</strong></li>
+</ol>
+
+<p>Please note that Approaches have changed significantly from Shield’s original Tactics. With the addition of Goals, we made big changes that make a one-to-one mapping from Tactics to Approaches difficult. Adding Goals as a super category allowed us to make each Approach more focused. As a result, we were able to reduce much of the overlap seen in Shield. While we believe the pros outweigh the cons, we recognize that this makes the conversion from Tactic to Approach more challenging. In the end we believe the change will provide greater clarity and ease of understanding.</p>
+
+<p>We provide three forms of translation tables or "crosswalks" from our previous release Technique IDs to the Engage Activity IDs to help with the transition. The three CSVs are:</p>
+
+<ol>
+  <li>Shield_ID_crossover.csv: a mapping of each Technique in Shield to its current state in Engage (Does not include Activities that are new to Engage)</li>
+  <li>Engage_ID_crossover.csv: a mapping of each Activity in Engage to its past state in Shield (Does not include Techniques that have been deprecated in Engage)</li>
+  <li>All_crossover.csv: A mapping of each Technique and Activity with information about both Shield and Engage</li>
+</ol>
+
+<p>We have also created a JSON representation of each CSV for greater machine readability:</p>
+
+<ul>
+  <li><a href="/assets/files/CSVs.zip">CSV Files</a></li>
+  <li><a href="/assets/files/JSONs.zip">JSON</a></li>
+</ul>
+
+<p>We have identified the following 5 key types of changes when mapping Techniques to Activities:</p>
+
+<ol>
+  <li>Technique Became Activity</li>
+  <li>New Activity Added</li>
+  <li>Multiple Techniques Became Activity</li>
+  <li>Technique Name was Changed</li>
+  <li>Technique Name was Changed and Scope Broadened</li>
+  <li>Deprecated</li>
+</ol>
+
+<p>Each of these types of changes is represented in the "Change Type" column of the CSVs or "change-type" field in the JSON. Some of these changes are simpler to implement than others. To help with the transition, we've outlined six tips on how to move from Shield to Engage.</p>
+
+<p><strong>Step 1: Start with the easy to remap activities first and automate.</strong>  For content mapped to Shield, start by replacing the existing technique ID from the value in the "TID" column with the value in the "New ID" column if there is one. Next, update the technique name to match the value in "New Activity Name." This remap fixes the majority of the changes for Technique Became Activity, Technique Name was Changed, Technique Name was Changed and Scope was Broadened, as well as Multiple Techniques Became Activity. We'll handle the remaining two cases in Step 2. In cases where the scope of the Activity was broadened, it's also worth checking the "Note" field in the CSV and "explanation" in the JSON.</p>
+
+<p><strong><em>Technique Became Activity</em></strong> For Techniques labeled "Technique Became Activity" the name is the same in Engage as in it was in Shield but note that the definitions and IDs will be new. For example, Detonate Malware (Shield: DTE0018) remains Detonate Malware (Engage: EAC0013).</p>
+
+<p><strong><em>New Activity Added</em></strong> No mappings from previous Techniques will be impacted. Examples of new Activities include Information Manipulation (EAC0015) and Storyboarding (SAC0003).</p>
+
+<p><strong><em>Multiple Techniques Became New Activity</em></strong> For Techniques labeled "Multiple Techniques Became New Activity," a new Activity was created covering the scope and content of multiple previous Techniques. For example, Decoy Account (Shield ID: DTE0010), Decoy Content (Shield ID: DTE0011), Decoy Credentials (Shield ID: DTE0012), Decoy Process (Shield ID: DTE0016), and Decoy Systems (Shield ID: DTE0017) merged into Decoy Artifacts and Systems (EAC0005).</p>
+
+<p><strong><em>Technique Name was Changed</em></strong> For Techniques labeled "Technique Name was Changed," a new Activity was created covering the same scope and content of a previous Technique with a new name. For example, Decoy Persona (Shield ID: DTE0015) is now Personas (EAC0012).</p>
+
+<p><strong><em>Technique Name was Changed and Scope was Broadened</em></strong> For Techniques labeled "Technique Name was Changed," a new Activity was created covering a larger scope and content from a previous Technique with a new name. For example, PCAP Collection (Shield ID: DTE0028) is a component of Network Monitoring (EAC0002).</p>
+
+<p><strong>Step 2: Look at the deprecated Techniques to see what changed.</strong> This is where some manual effort will be required. Deprecated techniques are not as straightforward. For techniques labeled as "Deprecated," we removed them from Engage without replacing them because we felt they did not fit into Engage. Often, these activities focused more broadly on good cyber hygiene practices, which are no longer in scope for Engage. For example, User Training (Shield ID: DTE0035) was removed because we felt this practice was not within the tighter scope of denial, deception, and adversary engagement.</p>
+
+<p><strong>Step 3: Review if the New Goals Categories Change Your Mappings.</strong> If you want to take full advantage of Engage, it is important to consider each goal in the context of a given goal it is mapped to. The implementation behind a given activity is influenced greatly by the goal it is mapped to. For example, Decoy Artifacts and Systems maps to both Expose and Affect. A Decoy Artifact intended to expose the adversary may be an interesting document with a tripwire. On the other hand, a Decoy Artifact mean to Affect an adversary may be an interesting document that is so large the adversary wastes time attempting to encrypt and exfiltrate the artifact. In both cases, the Decoy Artifact is an interesting document in the environment, but the differing goals result in different implementations of the document (one document has a tripwire, one is massive in size). Make sure each of your existing mappings accurately reflects not only the Activity definition, but also the corresponding Approach and Goal definitions.</p>
+
+<h3 id="moving-forward">Moving Forward</h3>
+
+<p>Although previous versions of Shield will remain available on GitHub for the time being, new content will only be added to Engage. We look forward to exploring all the new opportunities these improvements provide. We would like to thank everyone that made these exciting changes possible, including the Engage and Shield Teams (past and present) and the amazing community for your continuous feedback and support.</p>
+
+<p><br /><br />
+<em>For those familiar with ATT&amp;CK, this guide attempts to mirror the <a href="https://medium.com/mitre-attack/attack-with-sub-techniques-is-now-just-attack-8fc20997d8de">article</a> published to assist users in switching to ATT&amp;CK with Sub-Techniques.</em></p>
+
+</div>
+<!-- End Content -->
+
+
+            <!-- ENDSEARCH -->
+            </div>
+            <!-- End Main Content Div -->
+            <!-- Start Scripts -->
+            <script src="/assets/js/jquery-3.2.1.min.js"></script>
+            <script src="/assets/js/popper.min.js"></script>
+            <script src="/assets/js/bootstrap.min.js"></script>
+            <script src="/assets/js/bootstrap.bundle.min.js"></script>
+            <script src="/assets/js/lunr.js"></script>
+            <script src="/assets/js/site.js"></script>
+            <script src="/assets/js/search.js"></script>
+            <!-- End Scripts -->
+            <!-- Start Search Modal -->
+            <div id="search-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="serchModalLabel">Search Results</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Link</th>
+                                <th>Preview</th>
+                            </tr>
+                        </thead>
+                        <tbody id="search-results"></tbody>
+                    </table>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- End Search Modal -->
+        </div>
+        <!-- End Content Container -->
+        <!-- Start Footer -->
+        <footer class="footer p-3 bg-primary footer-expand-lg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <div class="footer-center-responsive my-auto">
+                            <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                                <img src="/assets/img/mitrelogowhiteontrans.gif" class="mitre-logo-wtrans">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4 footer-responsive-break"></div>
+                    <div class="col-8 col-sm-8 text-center center">
+                        <p>
+                            <strong>
+                                Copyright © 2021, The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.
+                            </strong>
+                        </p>
+                        <div class="row">
+                            <div class="col text-right">
+                                <strong>
+                                    <a href="/resources/privacy" class="footer-link">Privacy Policy</a>
+                                </strong>
+                            </div>
+                            <div class="col text-left">
+                                <strong>
+                                    <a href="/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 p-2 footer-responsive-break"></div>
+                    <div class="col">
+                        <div class="footer-float-right-responsive">
+                            <div class="mb-1">
+                                <a href="/resources/contact" class="btn btn-primary w-100">
+                                    <b>Connect with the MITRE Engage Team</b>
+                                </a>
+                            </div>
+                            <div class="mb-1">
+                                <a href="https://twitter.com/mitrecorp" class="btn btn-primary w-100">
+                                    <!-- <i class="fa fa-twitter"></i> -->
+                                    <img src="/assets/img/twitter.png" class="mr-1 twitter-icon">
+                                    <b>@MITREcorp</b>
+                                </a>
+                            </div>
+                            <div class="mb-1">
+                                <a href="https://twitter.com/mitreattack" class="btn btn-primary w-100">
+                                    <!-- <i class="fa fa-twitter"></i> -->
+                                    <img src="/assets/img/twitter.png" class="mr-1 twitter-icon">
+                                    <b>@MITREattack</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- End Body Container -->
+</body>
+<!-- End Body -->
+</html>

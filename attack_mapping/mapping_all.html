@@ -1,0 +1,42 @@
+---
+
+layout: default-data
+title: ATT&CK&#174 Mapping
+custom_css: default
+breadcrumb: ATT&CK&#174 Mapping
+
+---
+<h1>Complete ATT&CK&#174 Mapping</h1>
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-8">
+    <p>
+        When an adversary enagages in a specific behavior, they are vulnerable to expose an unintended weakness. By looking at each ATT&CK® activity, we can examine the weaknesses revealed and identify an engagement activity or activities to exploit this weakness. The following table outlines the Adversary Vulnerabilities and Engagement Activities that are available to the defender when the adversary engages in a behaviors across any ATT&CK® Tactic.
+    </p>
+  </div>
+</div>
+<table class="table table-bordered table-hover">
+    <thead>
+        <th>ATT&amp;CK Technique<img class="external-icon" src="{{ site.baseurl }}/assets/img/external_link.png"/></th>
+        <th>Adversary Vulnerability</th>
+        <th>Engagement Activity</th>
+        <th>Engagement Activity Description</th>
+    </thead>
+    <tbody>
+        {%- for row in site.data.attack_mapping -%}
+        {%- assign activity = site.data.activities | where: "name", row.eac | first -%}
+        <tr>
+            <td>
+              <a href="https://attack.mitre.org/activities/{{ row.attack_id }}">
+                {{ row.attack_technique }}
+              </a>
+            </td>
+            <td>{{ row.eav }}</td>
+
+            <td>
+              <a href="{{ site.baseurl }}/activities/{{row.eac_id}}">{{ row.eac }}</a>
+            </td>
+            <td>{{ site.data.activity_details[row.eac_id].description}}</td>
+        </tr>
+        {%- endfor -%}
+</tbody>
+</table>

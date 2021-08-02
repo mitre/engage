@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start Page Head -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="https://www.mitre.org/sites/all/themes/mitre/favicon.ico?ref=engage&ref_host=http%3A%2F%2Flocalhost%3A4000&ref_path=%2Fattack_groups%2F" type="image/x-icon">
+        
+        <title>Groups Overview</title>
+        
+        <!-- url_path: /attack_groups/ -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/assets/css/bootstrap-glyphicon.min.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css?a6820e0c">
+        
+</head>
+<!-- End Page Head-->
+<!-- Start Body -->
+<body>
+<!-- Start Body Container -->
+    <div class="body_container_relative">
+        <!-- Start  Content Container -->
+        <div class="content_container">
+            <!-- Start Nav -->
+            <nav class='navbar navbar-expand-lg navbar-dark bg-primary fixed-top'>
+                <!-- <div class="d-none d-m-block d-lg-block d-xl-block">
+                    <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#sidebar' aria-controls='sidebar' aria-expanded='false' aria-label='Toggle navigation'>
+                        <span id="sidebarCollapse" class='navbar-toggler-icon'></span>
+                    </button>
+                </div>
+                <div class="d-lg-none">
+                    <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                        <span id="navbarCollapser" class='navbar-toggler-icon'></span>
+                    </button>
+                </div> -->
+                <a class='navbar-brand' href='/'><img src="/assets/img/engage_logo_white.png" class="engage-logo"></a>
+                <div class='collapse navbar-collapse' id='navbarCollapse'>
+                    <ul class='nav nav-tabs ml-auto'>
+                                <li class="nav-item"><a href="/matrix/"  class="nav-link" ><b>Matrix</b></a></li>
+                                                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Goals</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/goals/?show=strategic">Strategic</a>
+                                        <a class="dropdown-item" href="/goals/?show=engagement">Engagement</a>
+                                        <a class="dropdown-item" href="/goals/">All</a>
+                                       <!--  <a class="dropdown-item" href="/strategicgoals">Strategic Goals</a>
+                                        <a class="dropdown-item" href="/engagementgoals">Engagement Goals</a> -->
+                                        <hr class="my-3 bg-light" /><a class="dropdown-item" href="/goals/EGO0001/">Expose</a><a class="dropdown-item" href="/goals/EGO0002/">Affect</a><a class="dropdown-item" href="/goals/EGO0003/">Elicit</a><a class="dropdown-item" href="/goals/SGO0001/">Prepare</a><a class="dropdown-item" href="/goals/SGO0002/">Understand</a></div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Approaches</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/approaches/?show=strategic">Strategic</a>
+                                        <a class="dropdown-item" href="/approaches/?show=engagement">Engagement</a>
+                                        <a class="dropdown-item" href="/approaches/">All</a>
+                                       <!--  <a class="dropdown-item" href="/strategicapproaches">Strategic Approaches</a>
+                                        <a class="dropdown-item" href="/engagementapproaches">Engagement Approaches</a> -->
+                                        <hr class="my-3 bg-light" /><a class="dropdown-item" href="/approaches/EAP0001/">Collection</a><a class="dropdown-item" href="/approaches/EAP0002/">Detection</a><a class="dropdown-item" href="/approaches/EAP0003/">Prevention</a><a class="dropdown-item" href="/approaches/EAP0004/">Direction</a><a class="dropdown-item" href="/approaches/EAP0005/">Disruption</a><a class="dropdown-item" href="/approaches/EAP0006/">Reassurance</a><a class="dropdown-item" href="/approaches/EAP0007/">Motivation</a><a class="dropdown-item" href="/approaches/SAP0001/">Planning</a><a class="dropdown-item" href="/approaches/SAP0002/">Analysis</a></div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Activities</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/activities/?show=strategic">Strategic</a>
+                                        <a class="dropdown-item" href="/activities/?show=engagement">Engagement</a>
+                                        <a class="dropdown-item" href="/activities/">All</a>
+                                       <!--  <a class="dropdown-item" href="/strategicapproaches">Strategic Approaches</a>
+                                        <a class="dropdown-item" href="/engagementapproaches">Engagement Approaches</a> -->
+                                       <!--  <hr class="my-3 bg-light" /><a class="dropdown-item" href="/activities/EAC0001/">API Monitoring</a><a class="dropdown-item" href="/activities/EAC0002/">Network Monitoring</a><a class="dropdown-item" href="/activities/EAC0003/">System Activity Monitoring</a><a class="dropdown-item" href="/activities/EAC0004/">Network Analysis</a><a class="dropdown-item" href="/activities/EAC0005/">Decoy Artifacts and Systems</a><a class="dropdown-item" href="/activities/EAC0006/">Application Diversity</a><a class="dropdown-item" href="/activities/EAC0007/">Network Diversity</a><a class="dropdown-item" href="/activities/EAC0008/">Burn-In</a><a class="dropdown-item" href="/activities/EAC0009/">Email Manipulation</a><a class="dropdown-item" href="/activities/EAC0010/">Peripheral Management</a><a class="dropdown-item" href="/activities/EAC0011/">Pocket Litter</a><a class="dropdown-item" href="/activities/EAC0012/">Personas</a><a class="dropdown-item" href="/activities/EAC0013/">Detonate Malware</a><a class="dropdown-item" href="/activities/EAC0014/">Software Manipulation</a><a class="dropdown-item" href="/activities/EAC0015/">Information Manipulation</a><a class="dropdown-item" href="/activities/EAC0016/">Network Manipulation</a><a class="dropdown-item" href="/activities/EAC0017/">Hardware Manipulation</a><a class="dropdown-item" href="/activities/EAC0018/">Security Controls</a><a class="dropdown-item" href="/activities/EAC0019/">Baseline</a><a class="dropdown-item" href="/activities/EAC0020/">Isolation</a><a class="dropdown-item" href="/activities/EAC0021/">Migrate Attack Vector</a><a class="dropdown-item" href="/activities/EAC0022/">Artifact Diversity</a><a class="dropdown-item" href="/activities/SAC0001/">Strategic Goal</a><a class="dropdown-item" href="/activities/SAC0002/">Persona Creation</a><a class="dropdown-item" href="/activities/SAC0003/">Storyboarding</a><a class="dropdown-item" href="/activities/SAC0004/">Develop Threat Model</a><a class="dropdown-item" href="/activities/SAC0005/">Define Exit Criteria</a><a class="dropdown-item" href="/activities/SAC0006/">Hotwash</a><a class="dropdown-item" href="/activities/SAC0007/">Refine Operation Activities</a><a class="dropdown-item" href="/activities/SAC0008/">Distill Intelligence</a><a class="dropdown-item" href="/activities/SAC0009/">Inform Threat Model</a>-->
+                                    </div>
+                                </li>
+                                 <!-- <li class="nav-item"><a href="/activities/?filter=strategic"  class="nav-link" ><b>Activities</b></a></li> -->
+                                 <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Activities</b>
+                                    </a>
+
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/activities">All</a>
+                                        <a class="dropdown-item" href="/strategicactivities">Strategic Activities</a>
+                                        <a class="dropdown-item" href="/engagementactivities">Engagement Activities</a>
+                                      
+                                    </div>
+                                </li> -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>ATT&CK&#174 Mapping</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/attack_mapping/">Overview</a>
+                                        <a class="dropdown-item" href="/attack_groups/">ATT&CK Groups</a>
+                                        <hr class="my-3 bg-light" />
+                                        <a class="dropdown-item" href="/attack_mapping/TA0043/">Reconnaissance</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0042/">Resource Development</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0001/">Initial Access</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0002/">Execution</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0003/">Persistence</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0004/">Privilege Escalation</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0005/">Defense Evasion</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0006/">Credential Access</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0007/">Discovery</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0008/">Lateral Movement</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0009/">Collection</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0010/">Exfiltration</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0011/">Command and Control</a>
+                                        <a class="dropdown-item" href="/attack_mapping/TA0040/">Impact</a>
+                                        <hr class="my-3 bg-light" />
+                                        <a class="dropdown-item" href="/attack_mapping/mapping_all.html">Complete Mapping</a>
+                                    </div>
+                                </li>
+                            
+                        
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="/resources/" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Resources</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/resources/getting-started">Getting Started</a>
+                                        <a class="dropdown-item" href="/resources/shield">Moving from Shield to Engage</a>
+                                        <a class="dropdown-item" href="/resources/faq">FAQ</a>
+                                        <a class="dropdown-item" href="/resources/related-projects">Related Projects</a>
+                                        <a class="dropdown-item" href="/resources/contribute">Contribute</a>
+                                        <a class="dropdown-item" href="/resources/updates">Updates</a>
+                                        <a class="dropdown-item" href="/resources/contact">Contact Us</a>
+                                    </div>
+                                </li>
+                                <!-- <li class="nav-item"><a href="https://medium.com/mitre-shield"  class="nav-link" target="_blank"><b>Blog</b><img class="external-icon" src="/assets/img/external-site.svg"></a></li> -->
+                        <li class="nav-item">
+                            <form id="site-search" class="form-inline my-2 my-lg-0">
+                                <input id="search-term" class="form-control mr-sm-2" type="text" placeholder="Search">
+                                <button class="btn btn-secondary my-2 my-sm-0" data-toggle="modal" data-target="#search-modal" type="submit">Search</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Nav -->
+            <!-- Start Banner -->
+
+            
+
+            <div class="alert alert-success text-center">
+                <strong>MITRE Shield is now MITRE Engage v0.9 Beta.</strong>
+            </div>
+            
+            <!-- End Banner -->
+            <!-- Start Side Nav -->
+            <!-- <div class="wrapper">
+                <nav id="sidebar" class="collapse overflow-auto disable-scrollbars bg-primary">
+                    <div class="sidebar nav px-2" id="v-tab" role="tablist" aria-orientation="vertical">
+                        <span class="heading text-white" id="v-home-tab" aria-selected="false">Active Defense Approaches</span><div id="DTA0001" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0001"><span class="text-white">Channel</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0001-header" data-toggle="collapse" data-target="#DTA0001-body" aria-expanded="false" aria-controls="DTA0001-body">
+                                </div>
+                            </div>
+                            <div id="DTA0001-body" class="sidenav-body collapse" aria-labelledby="DTA0001-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0001">
+                                        <a href="/activities/DTE0001/"><span class="text-white">Admin Access</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0003">
+                                        <a href="/activities/DTE0003/"><span class="text-white">API Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0013">
+                                        <a href="/activities/DTE0013/"><span class="text-white">Decoy Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0015">
+                                        <a href="/activities/DTE0015/"><span class="text-white">Decoy Persona</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0016">
+                                        <a href="/activities/DTE0016/"><span class="text-white">Decoy Process</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0018">
+                                        <a href="/activities/DTE0018/"><span class="text-white">Detonate Malware</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0023">
+                                        <a href="/activities/DTE0023/"><span class="text-white">Migrate Attack Vector</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0025">
+                                        <a href="/activities/DTE0025/"><span class="text-white">Network Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0029">
+                                        <a href="/activities/DTE0029/"><span class="text-white">Peripheral Management</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0030">
+                                        <a href="/activities/DTE0030/"><span class="text-white">Pocket Litter</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0001-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0002" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0002"><span class="text-white">Collect</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0002-header" data-toggle="collapse" data-target="#DTA0002-body" aria-expanded="false" aria-controls="DTA0002-body">
+                                </div>
+                            </div>
+                            <div id="DTA0002-body" class="sidenav-body collapse" aria-labelledby="DTA0002-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0003">
+                                        <a href="/activities/DTE0003/"><span class="text-white">API Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0005">
+                                        <a href="/activities/DTE0005/"><span class="text-white">Backup and Recovery</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0018">
+                                        <a href="/activities/DTE0018/"><span class="text-white">Detonate Malware</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0019">
+                                        <a href="/activities/DTE0019/"><span class="text-white">Email Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0021">
+                                        <a href="/activities/DTE0021/"><span class="text-white">Hunting</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0025">
+                                        <a href="/activities/DTE0025/"><span class="text-white">Network Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0027">
+                                        <a href="/activities/DTE0027/"><span class="text-white">Network Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0028">
+                                        <a href="/activities/DTE0028/"><span class="text-white">PCAP Collection</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0029">
+                                        <a href="/activities/DTE0029/"><span class="text-white">Peripheral Management</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0031">
+                                        <a href="/activities/DTE0031/"><span class="text-white">Protocol Decoder</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0034">
+                                        <a href="/activities/DTE0034/"><span class="text-white">System Activity Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0002-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0003" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0003"><span class="text-white">Contain</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0003-header" data-toggle="collapse" data-target="#DTA0003-body" aria-expanded="false" aria-controls="DTA0003-body">
+                                </div>
+                            </div>
+                            <div id="DTA0003-body" class="sidenav-body collapse" aria-labelledby="DTA0003-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0001">
+                                        <a href="/activities/DTE0001/"><span class="text-white">Admin Access</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0006">
+                                        <a href="/activities/DTE0006/"><span class="text-white">Baseline</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0018">
+                                        <a href="/activities/DTE0018/"><span class="text-white">Detonate Malware</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0020">
+                                        <a href="/activities/DTE0020/"><span class="text-white">Hardware Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0022">
+                                        <a href="/activities/DTE0022/"><span class="text-white">Isolation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0023">
+                                        <a href="/activities/DTE0023/"><span class="text-white">Migrate Attack Vector</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0003-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0004" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0004"><span class="text-white">Detect</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0004-header" data-toggle="collapse" data-target="#DTA0004-body" aria-expanded="false" aria-controls="DTA0004-body">
+                                </div>
+                            </div>
+                            <div id="DTA0004-body" class="sidenav-body collapse" aria-labelledby="DTA0004-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0003">
+                                        <a href="/activities/DTE0003/"><span class="text-white">API Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0006">
+                                        <a href="/activities/DTE0006/"><span class="text-white">Baseline</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0007">
+                                        <a href="/activities/DTE0007/"><span class="text-white">Behavioral Analytics</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0013">
+                                        <a href="/activities/DTE0013/"><span class="text-white">Decoy Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0015">
+                                        <a href="/activities/DTE0015/"><span class="text-white">Decoy Persona</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0019">
+                                        <a href="/activities/DTE0019/"><span class="text-white">Email Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0021">
+                                        <a href="/activities/DTE0021/"><span class="text-white">Hunting</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0022">
+                                        <a href="/activities/DTE0022/"><span class="text-white">Isolation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0027">
+                                        <a href="/activities/DTE0027/"><span class="text-white">Network Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0028">
+                                        <a href="/activities/DTE0028/"><span class="text-white">PCAP Collection</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0030">
+                                        <a href="/activities/DTE0030/"><span class="text-white">Pocket Litter</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0031">
+                                        <a href="/activities/DTE0031/"><span class="text-white">Protocol Decoder</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0033">
+                                        <a href="/activities/DTE0033/"><span class="text-white">Standard Operating Procedure</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0034">
+                                        <a href="/activities/DTE0034/"><span class="text-white">System Activity Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0035">
+                                        <a href="/activities/DTE0035/"><span class="text-white">User Training</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0004-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0005" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0005"><span class="text-white">Disrupt</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0005-header" data-toggle="collapse" data-target="#DTA0005-body" aria-expanded="false" aria-controls="DTA0005-body">
+                                </div>
+                            </div>
+                            <div id="DTA0005-body" class="sidenav-body collapse" aria-labelledby="DTA0005-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0001">
+                                        <a href="/activities/DTE0001/"><span class="text-white">Admin Access</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0005">
+                                        <a href="/activities/DTE0005/"><span class="text-white">Backup and Recovery</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0006">
+                                        <a href="/activities/DTE0006/"><span class="text-white">Baseline</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0007">
+                                        <a href="/activities/DTE0007/"><span class="text-white">Behavioral Analytics</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0019">
+                                        <a href="/activities/DTE0019/"><span class="text-white">Email Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0020">
+                                        <a href="/activities/DTE0020/"><span class="text-white">Hardware Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0022">
+                                        <a href="/activities/DTE0022/"><span class="text-white">Isolation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0033">
+                                        <a href="/activities/DTE0033/"><span class="text-white">Standard Operating Procedure</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0035">
+                                        <a href="/activities/DTE0035/"><span class="text-white">User Training</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0005-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0006" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0006"><span class="text-white">Facilitate</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0006-header" data-toggle="collapse" data-target="#DTA0006-body" aria-expanded="false" aria-controls="DTA0006-body">
+                                </div>
+                            </div>
+                            <div id="DTA0006-body" class="sidenav-body collapse" aria-labelledby="DTA0006-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0001">
+                                        <a href="/activities/DTE0001/"><span class="text-white">Admin Access</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0007">
+                                        <a href="/activities/DTE0007/"><span class="text-white">Behavioral Analytics</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0008">
+                                        <a href="/activities/DTE0008/"><span class="text-white">Burn-In</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0013">
+                                        <a href="/activities/DTE0013/"><span class="text-white">Decoy Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0015">
+                                        <a href="/activities/DTE0015/"><span class="text-white">Decoy Persona</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0025">
+                                        <a href="/activities/DTE0025/"><span class="text-white">Network Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0029">
+                                        <a href="/activities/DTE0029/"><span class="text-white">Peripheral Management</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0030">
+                                        <a href="/activities/DTE0030/"><span class="text-white">Pocket Litter</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0006-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0007" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0007"><span class="text-white">Legitimize</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0007-header" data-toggle="collapse" data-target="#DTA0007-body" aria-expanded="false" aria-controls="DTA0007-body">
+                                </div>
+                            </div>
+                            <div id="DTA0007-body" class="sidenav-body collapse" aria-labelledby="DTA0007-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0008">
+                                        <a href="/activities/DTE0008/"><span class="text-white">Burn-In</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0013">
+                                        <a href="/activities/DTE0013/"><span class="text-white">Decoy Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0015">
+                                        <a href="/activities/DTE0015/"><span class="text-white">Decoy Persona</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0016">
+                                        <a href="/activities/DTE0016/"><span class="text-white">Decoy Process</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0025">
+                                        <a href="/activities/DTE0025/"><span class="text-white">Network Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0007-DTE0030">
+                                        <a href="/activities/DTE0030/"><span class="text-white">Pocket Litter</span></a>
+                                    </div>
+                                </div></div>
+                        </div><div id="DTA0008" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="/approaches/DTA0008"><span class="text-white">Test</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="DTA0008-header" data-toggle="collapse" data-target="#DTA0008-body" aria-expanded="false" aria-controls="DTA0008-body">
+                                </div>
+                            </div>
+                            <div id="DTA0008-body" class="sidenav-body collapse" aria-labelledby="DTA0008-header"><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0001">
+                                        <a href="/activities/DTE0001/"><span class="text-white">Admin Access</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0003">
+                                        <a href="/activities/DTE0003/"><span class="text-white">API Monitoring</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0004">
+                                        <a href="/activities/DTE0004/"><span class="text-white">Application Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0005">
+                                        <a href="/activities/DTE0005/"><span class="text-white">Backup and Recovery</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0010">
+                                        <a href="/activities/DTE0010/"><span class="text-white">Decoy Account</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0011">
+                                        <a href="/activities/DTE0011/"><span class="text-white">Decoy Content </span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0012">
+                                        <a href="/activities/DTE0012/"><span class="text-white">Decoy Credentials</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0013">
+                                        <a href="/activities/DTE0013/"><span class="text-white">Decoy Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0014">
+                                        <a href="/activities/DTE0014/"><span class="text-white">Decoy Network</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0015">
+                                        <a href="/activities/DTE0015/"><span class="text-white">Decoy Persona</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0017">
+                                        <a href="/activities/DTE0017/"><span class="text-white">Decoy System</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0018">
+                                        <a href="/activities/DTE0018/"><span class="text-white">Detonate Malware</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0023">
+                                        <a href="/activities/DTE0023/"><span class="text-white">Migrate Attack Vector</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0025">
+                                        <a href="/activities/DTE0025/"><span class="text-white">Network Diversity</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0026">
+                                        <a href="/activities/DTE0026/"><span class="text-white">Network Manipulation</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0029">
+                                        <a href="/activities/DTE0029/"><span class="text-white">Peripheral Management</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0030">
+                                        <a href="/activities/DTE0030/"><span class="text-white">Pocket Litter</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0032">
+                                        <a href="/activities/DTE0032/"><span class="text-white">Security Controls</span></a>
+                                    </div>
+                                </div><div class="sidenav">
+                                    <div class="sidenav-head" id="DTA0008-DTE0036">
+                                        <a href="/activities/DTE0036/"><span class="text-white">Software Manipulation</span></a>
+                                    </div>
+                                </div></div>
+                        </div></div>
+                </nav>
+            </div> -->
+            <!-- End Side Nav -->
+            <!-- Start Breadcrumb -->
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item"><a href="/">Home</a></li><liclass="breadcrumb-item">&nbsp;>&nbsp;<a href="/attack_groups/">ATT&CK® Groups Overview</a></li></ol>
+                           
+            <!-- End Breadcrumb -->
+            <!-- Start Main Content Div -->
+            <div class="container-fluid">
+            <!-- STARTSEARCH -->
+
+
+
+<!-- Start Content -->
+<h1>ATT&CK® Groups Overview</h1>
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-8">
+    <p>
+        By mapping the various Engagement Activities to ATT&CK, we can ensure that each activity in Engage is driven by observed adversary behavior. In adversary engagement operations it can be tempting to try to anticipate the adversary actions. However, without extensive understanding of the specific threat, this line of thinking can lead the defender to make incorrect or ineffective decisions. By mapping to ATT&CK, we can ensure that our chosen engagement activities are appropriate for the target adversary.
+        <p>
+        The following table provides a list of ATT&CK Groups with Mapped Enterprise ATT&CK Techniques. Each one links to a details page to show the ATT&CK Mapping entries that apply to that specific group.
+    </p>
+  </div>
+</div>
+<h3>ATT&CK® Groups</h3>
+<table class="table table-bordered table-hover">
+    <thead>
+        <th>ATT&CK® Group</th>
+        <th>Description</th>
+    </thead>
+    <tbody><tr>
+
+                <td><a href="/attack_groups/G0099">APT-C-36</a></td>
+                <td>APT-C-36 is a suspected South America espionage group that has been active since at least 2018. The group mainly targets Colombian government institutions as well as important corporations in the financial sector, petroleum industry, and professional manufacturing.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0006">APT1</a></td>
+                <td>APT1 is a Chinese threat group that has been attributed to the 2nd Bureau of the People’s Liberation Army (PLA) General Staff Department’s (GSD) 3rd Department, commonly known by its Military Unit Cover Designator (MUCD) as Unit 61398. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0005">APT12</a></td>
+                <td>APT12 is a threat group that has been attributed to China. The group has targeted a variety of victims including but not limited to media outlets, high-tech companies, and multiple governments.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0026">APT18</a></td>
+                <td>APT18 is a threat group that has operated since at least 2009 and has targeted a range of industries, including technology, manufacturing, human rights groups, government, and medical. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0073">APT19</a></td>
+                <td>APT19 is a Chinese-based threat group that has targeted a variety of industries, including defense, finance, energy, pharmaceutical, telecommunications, high tech, education, manufacturing, and legal services. In 2017, a phishing campaign was used to target seven law and investment firms.  Some analysts track APT19 and Deep Panda as the same group, but it is unclear from open source information if the groups are the same.   </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0007">APT28</a></td>
+                <td>APT28 is a threat group that has been attributed to Russia's General Staff Main Intelligence Directorate (GRU) 85th Main Special Service Center (GTsSS) military unit 26165. This group has been active since at least 2004.          
+
+APT28 reportedly compromised the Hillary Clinton campaign, the Democratic National Committee, and the Democratic Congressional Campaign Committee in 2016 in an attempt to interfere with the U.S. presidential election.  In 2018, the US indicted five GRU Unit 26165 officers associated with APT28 for cyber operations (including close-access operations) conducted between 2014 and 2018 against the World Anti-Doping Agency (WADA), the US Anti-Doping Agency, a US nuclear facility, the Organization for the Prohibition of Chemical Weapons (OPCW), the Spiez Swiss Chemicals Laboratory, and other organizations. Some of these were conducted with the assistance of GRU Unit 74455, which is also referred to as Sandworm Team. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0016">APT29</a></td>
+                <td>APT29 is threat group that has been attributed to the Russian government and has operated since at least 2008.   This group reportedly compromised the Democratic National Committee starting in the summer of 2015. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0022">APT3</a></td>
+                <td>APT3 is a China-based threat group that researchers have attributed to China's Ministry of State Security.   This group is responsible for the campaigns known as Operation Clandestine Fox, Operation Clandestine Wolf, and Operation Double Tap.   As of June 2015, the group appears to have shifted from targeting primarily US victims to primarily political organizations in Hong Kong. 
+
+MITRE has also developed an APT3 Adversary Emulation Plan.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0013">APT30</a></td>
+                <td>APT30 is a threat group suspected to be associated with the Chinese government. While Naikon shares some characteristics with APT30, the two groups do not appear to be exact matches.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0050">APT32</a></td>
+                <td>APT32 is a threat group that has been active since at least 2014. The group has targeted multiple private sector industries as well as with foreign governments, dissidents, and journalists with a strong focus on Southeast Asian countries like Vietnam, the Philippines, Laos, and Cambodia. They have extensively used strategic web compromises to compromise victims. The group is believed to be Vietnam-based.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0064">APT33</a></td>
+                <td>APT33 is a suspected Iranian threat group that has carried out operations since at least 2013. The group has targeted organizations across multiple industries in the United States, Saudi Arabia, and South Korea, with a particular interest in the aviation and energy sectors.  </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0067">APT37</a></td>
+                <td>APT37 is a suspected North Korean cyber espionage group that has been active since at least 2012. The group has targeted victims primarily in South Korea, but also in Japan, Vietnam, Russia, Nepal, China, India, Romania, Kuwait, and other parts of the Middle East. APT37 has also been linked to following campaigns between 2016-2018: Operation Daybreak, Operation Erebus, Golden Time, Evil New Year, Are you Happy?, FreeMilk, Northern Korean Human Rights, and Evil New Year 2018.   
+
+North Korean group definitions are known to have significant overlap, and the name Lazarus Group is known to encompass a broad range of activity. Some organizations use the name Lazarus Group to refer to any activity attributed to North Korea. Some organizations track North Korean clusters or groups such as Bluenoroff, APT37, and APT38 separately, while other organizations may track some activity associated with those group names by the name Lazarus Group.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0082">APT38</a></td>
+                <td>APT38 is a financially-motivated threat group that is backed by the North Korean regime. The group mainly targets banks and financial institutions and has targeted more than 16 organizations in at least 13 countries since at least 2014.
+
+North Korean group definitions are known to have significant overlap, and the name Lazarus Group is known to encompass a broad range of activity. Some organizations use the name Lazarus Group to refer to any activity attributed to North Korea. Some organizations track North Korean clusters or groups such as Bluenoroff, APT37, and APT38 separately, while other organizations may track some activity associated with those group names by the name Lazarus Group.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0087">APT39</a></td>
+                <td>APT39 is an Iranian cyber espionage group that has been active since at least 2014. They have targeted the telecommunication and travel industries to collect personal information that aligns with Iran's national priorities. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0096">APT41</a></td>
+                <td>APT41 is a group that carries out Chinese state-sponsored espionage activity in addition to financially motivated activity. APT41 has been active since as early as 2012. The group has been observed targeting healthcare, telecom, technology, and video game industries in 14 countries.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0001">Axiom</a></td>
+                <td>Axiom is a cyber espionage group suspected to be associated with the Chinese government. It is responsible for the Operation SMN campaign.  Though both this group and Winnti Group use the malware Winnti for Windows, the two groups appear to be distinct based on differences in reporting on the groups' TTPs and targeting.   </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0060">BRONZE BUTLER</a></td>
+                <td>BRONZE BUTLER is a cyber espionage group with likely Chinese origins that has been active since at least 2008. The group primarily targets Japanese organizations, particularly those in government, biotechnology, electronics manufacturing, and industrial chemistry.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0063">BlackOasis</a></td>
+                <td>BlackOasis is a Middle Eastern threat group that is believed to be a customer of Gamma Group. The group has shown interest in prominent figures in the United Nations, as well as opposition bloggers, activists, regional news correspondents, and think tanks.   A group known by Microsoft as NEODYMIUM is reportedly associated closely with BlackOasis operations, but evidence that the group names are aliases has not been identified. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0098">BlackTech</a></td>
+                <td>BlackTech is a cyber espionage group operating against targets in East Asia, particularly Taiwan, and occasionally, Japan and Hong Kong.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0108">Blue Mockingbird</a></td>
+                <td>Blue Mockingbird is a cluster of observed activity involving Monero cryptocurrency-mining payloads in dynamic-link library (DLL) form on Windows systems. The earliest observed Blue Mockingbird tools were created in December 2019.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0008">Carbanak</a></td>
+                <td>Carbanak is a threat group that mainly targets banks. It also refers to malware of the same name (Carbanak). It is sometimes referred to as FIN7, but these appear to be two groups using the same Carbanak malware and are therefore tracked separately.  </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0114">Chimera</a></td>
+                <td>Chimera is a suspected China-based threat group, targeting the semiconductor industry in Taiwan since at least 2018.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0003">Cleaver</a></td>
+                <td>Cleaver is a threat group that has been attributed to Iranian actors and is responsible for activity tracked as Operation Cleaver.  Strong circumstantial evidence suggests Cleaver is linked to Threat Group 2889 (TG-2889). </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0080">Cobalt Group</a></td>
+                <td>Cobalt Group is a financially motivated threat group that has primarily targeted financial institutions. The group has conducted intrusions to steal money via targeting ATM systems, card processing, payment systems and SWIFT systems. Cobalt Group has mainly targeted banks in Eastern Europe, Central Asia, and Southeast Asia. One of the alleged leaders was arrested in Spain in early 2018, but the group still appears to be active. The group has been known to target organizations in order to use their access to then compromise additional victims.        Reporting indicates there may be links between Cobalt Group and both the malware Carbanak and the group Carbanak. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0052">CopyKittens</a></td>
+                <td>CopyKittens is an Iranian cyber espionage group that has been operating since at least 2013. It has targeted countries including Israel, Saudi Arabia, Turkey, the U.S., Jordan, and Germany. The group is responsible for the campaign known as Operation Wilted Tulip.   </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0070">Dark Caracal</a></td>
+                <td>Dark Caracal is threat group that has been attributed to the Lebanese General Directorate of General Security (GDGS) and has operated since at least 2012. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0079">DarkHydrus</a></td>
+                <td>DarkHydrus is a threat group that has targeted government agencies and educational institutions in the Middle East since at least 2016. The group heavily leverages open-source tools and custom payloads for carrying out attacks.  </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0105">DarkVishnya</a></td>
+                <td>DarkVishnya is a financially motivated threat actor targeting financial institutions in Eastern Europe. In 2017-2018 the group attacked at least 8 banks in this region.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0012">Darkhotel</a></td>
+                <td>Darkhotel is a threat group that has been active since at least 2004. The group has conducted activity on hotel and business center Wi‑Fi and physical connections as well as peer-to-peer and file sharing networks. The actors have also conducted spearphishing. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0009">Deep Panda</a></td>
+                <td>Deep Panda is a suspected Chinese threat group known to target many industries, including government, defense, financial, and telecommunications.  The intrusion into healthcare company Anthem has been attributed to Deep Panda.  This group is also known as Shell Crew, WebMasters, KungFu Kittens, and PinkPanther.  Deep Panda also appears to be known as Black Vine based on the attribution of both group names to the Anthem intrusion.  Some analysts track Deep Panda and APT19 as the same group, but it is unclear from open source information if the groups are the same. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0035">Dragonfly</a></td>
+                <td>Dragonfly Dragonfly is a cyber espionage group that has been active since at least 2011. They initially targeted defense and aviation companies but shifted to focus on the energy sector in early 2013. They have also targeted companies related to industrial control systems. 
+
+A similar group emerged in 2015 and was identified by Symantec as Dragonfly 2.0. There is debate over the extent of the overlap between Dragonfly and Dragonfly 2.0, but there is sufficient evidence to lead to these being tracked as two separate groups. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0074">Dragonfly 2.0</a></td>
+                <td>Dragonfly 2.0 is a suspected Russian group that has targeted government entities and multiple U.S. critical infrastructure sectors since at least March 2016.   There is debate over the extent of overlap between Dragonfly 2.0 and Dragonfly, but there is sufficient evidence to lead to these being tracked as two separate groups. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0031">Dust Storm</a></td>
+                <td>Dust Storm is a threat group that has targeted multiple industries in Japan, South Korea, the United States, Europe, and several Southeast Asian countries. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0066">Elderwood</a></td>
+                <td>Elderwood is a suspected Chinese cyber espionage group that was reportedly responsible for the 2009 Google intrusion known as Operation Aurora.  The group has targeted defense organizations, supply chain manufacturers, human rights and nongovernmental organizations (NGOs), and IT service providers.  </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0020">Equation</a></td>
+                <td>Equation is a sophisticated threat group that employs multiple remote access tools. The group is known to use zero-day exploits and has developed the capability to overwrite the firmware of hard disk drives. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0051">FIN10</a></td>
+                <td>FIN10 is a financially motivated threat group that has targeted organizations in North America since at least 2013 through 2016. The group uses stolen data exfiltrated from victims to extort organizations. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0085">FIN4</a></td>
+                <td>FIN4 is a financially-motivated threat group that has targeted confidential information related to the public financial market, particularly regarding healthcare and pharmaceutical companies, since at least 2013. FIN4 is unique in that they do not infect victims with typical persistent malware, but rather they focus on capturing credentials authorized to access email and other non-public correspondence.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0053">FIN5</a></td>
+                <td>FIN5 is a financially motivated threat group that has targeted personally identifiable information and payment card information. The group has been active since at least 2008 and has targeted the restaurant, gaming, and hotel industries. The group is made up of actors who likely speak Russian.   </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0037">FIN6</a></td>
+                <td>FIN6 is a cyber crime group that has stolen payment card data and sold it for profit on underground marketplaces. This group has aggressively targeted and compromised point of sale (PoS) systems in the hospitality and retail sectors.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0046">FIN7</a></td>
+                <td>FIN7 is a financially-motivated threat group that has primarily targeted the U.S. retail, restaurant, and hospitality sectors since mid-2015. They often use point-of-sale malware. A portion of FIN7 was run out of a front company called Combi Security. FIN7 is sometimes referred to as Carbanak Group, but these appear to be two groups using the same Carbanak malware and are therefore tracked separately.    </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0061">FIN8</a></td>
+                <td>FIN8 is a financially motivated threat group known to launch tailored spearphishing campaigns targeting the retail, restaurant, and hospitality industries.  </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0101">Frankenstein</a></td>
+                <td>Frankenstein is a campaign carried out between January and April 2019 by unknown threat actors. The campaign name comes from the actors' ability to piece together several unrelated components.  </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0036">GCMAN</a></td>
+                <td>GCMAN is a threat group that focuses on targeting banks for the purpose of transferring money to e-currency services. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0115">GOLD SOUTHFIELD</a></td>
+                <td>GOLD SOUTHFIELD is a financially motivated threat group active since at least 2019 that operates the REvil Ransomware-as-a Service (RaaS). GOLD SOUTHFIELD provides backend infrastructure for affiliates recruited on underground forums to perpetrate high value deployments.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0084">Gallmaker</a></td>
+                <td>Gallmaker is a cyberespionage group that has targeted victims in the Middle East and has been active since at least December 2017. The group has mainly targeted victims in the defense, military, and government sectors.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0047">Gamaredon Group</a></td>
+                <td>Gamaredon Group is a threat group that has been active since at least 2013 and has targeted individuals likely involved in the Ukrainian government. The name Gamaredon Group comes from a misspelling of the word "Armageddon", which was detected in the adversary's early campaigns.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0078">Gorgon Group</a></td>
+                <td>Gorgon Group is a threat group consisting of members who are suspected to be Pakistan-based or have other connections to Pakistan. The group has performed a mix of criminal and targeted attacks, including campaigns against government organizations in the United Kingdom, Spain, Russia, and the United States. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0043">Group5</a></td>
+                <td>Group5 is a threat group with a suspected Iranian nexus, though this attribution is not definite. The group has targeted individuals connected to the Syrian opposition via spearphishing and watering holes, normally using Syrian and Iranian themes. Group5 has used two commonly available remote access tools (RATs), njRAT and NanoCore, as well as an Android RAT, DroidJack. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0072">Honeybee</a></td>
+                <td>Honeybee is a campaign led by an unknown actor that targets humanitarian aid organizations and has been active in Vietnam, Singapore, Argentina, Japan, Indonesia, and Canada. It has been an active operation since August of 2017 and as recently as February 2018. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0100">Inception</a></td>
+                <td>Inception is a cyber espionage group active since at least 2014. The group has targeted multiple industries and governmental entities primarily in Russia, but has also been active in the United States and throughout Europe, Asia, Africa, and the Middle East.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0004">Ke3chang</a></td>
+                <td>Ke3chang is a threat group attributed to actors operating out of China. Ke3chang has targeted several industries, including oil, government, military, and more.   </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0094">Kimsuky</a></td>
+                <td>Kimsuky is a North Korean-based threat group that has been active since at least September 2013. The group focuses on targeting Korean think tank as well as DPRK/nuclear-related targets. The group was attributed as the actor behind the Korea Hydro & Nuclear Power Co. compromise.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0032">Lazarus Group</a></td>
+                <td>Lazarus Group is a threat group that has been attributed to the North Korean government. The group has been active since at least 2009 and was reportedly responsible for the November 2014 destructive wiper attack against Sony Pictures Entertainment as part of a campaign named Operation Blockbuster by Novetta. Malware used by Lazarus Group correlates to other reported campaigns, including Operation Flame, Operation 1Mission, Operation Troy, DarkSeoul, and Ten Days of Rain.  In late 2017, Lazarus Group used KillDisk, a disk-wiping tool, in an attack against an online casino based in Central America. 
+
+North Korean group definitions are known to have significant overlap, and the name Lazarus Group is known to encompass a broad range of activity. Some organizations use the name Lazarus Group to refer to any activity attributed to North Korea. Some organizations track North Korean clusters or groups such as Bluenoroff, APT37, and APT38 separately, while other organizations may track some activity associated with those group names by the name Lazarus Group.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0077">Leafminer</a></td>
+                <td>Leafminer is an Iranian threat group that has targeted government organizations and business entities in the Middle East since at least early 2017. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0065">Leviathan</a></td>
+                <td>Leviathan is a cyber espionage group that has been active since at least 2013. The group generally targets defense and government organizations, but has also targeted a range of industries including engineering firms, shipping and transportation, manufacturing, defense, government offices, and research universities in the United States, Western Europe, and along the South China Sea.  </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0095">Machete</a></td>
+                <td>Machete is a group that has been active since at least 2010, targeting high-profile government entities in Latin American countries.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0059">Magic Hound</a></td>
+                <td>Magic Hound is an Iranian-sponsored threat group that conducts long term, resource-intensive operations to collect intelligence, dating back as early as 2014. The group typically targets U.S. and the Middle Eastern military, as well as other organizations with government personnel, via complex social engineering campaigns.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0002">Moafee</a></td>
+                <td>Moafee is a threat group that appears to operate from the Guandong Province of China. Due to overlapping TTPs, including similar custom tools, Moafee is thought to have a direct or indirect relationship with the threat group DragonOK. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0103">Mofang</a></td>
+                <td>Mofang is a likely China-based cyber espionage group, named for its frequent practice of imitating a victim's infrastructure. This adversary has been observed since at least May 2012 conducting focused attacks against government and critical infrastructure in Myanmar, as well as several other countries and sectors including military, automobile, and weapons industries.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0021">Molerats</a></td>
+                <td>Molerats is a politically-motivated threat group that has been operating since 2012. The group's victims have primarily been in the Middle East, Europe, and the United States.  </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0069">MuddyWater</a></td>
+                <td>MuddyWater is an Iranian threat group that has primarily targeted Middle Eastern nations, and has also targeted European and North American nations. The group's victims are mainly in the telecommunications, government (IT services), and oil sectors. Activity from this group was previously linked to FIN7, but the group is believed to be a distinct group possibly motivated by espionage.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0019">Naikon</a></td>
+                <td>Naikon is a threat group that has focused on targets around the South China Sea. The group has been attributed to the Chinese People’s Liberation Army’s (PLA) Chengdu Military Region Second Technical Reconnaissance Bureau(Military Unit Cover Designator 78020). While Naikon shares some characteristics with APT30, the two groups do not appear to be exact matches.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0014">Night Dragon</a></td>
+                <td>Night Dragon is a campaign name for activity involving a threat group that has conducted activity originating primarily in China. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0049">OilRig</a></td>
+                <td>OilRig is a suspected Iranian threat group that has targeted Middle Eastern and international victims since at least 2014. The group has targeted a variety of industries, including financial, government, energy, chemical, and telecommunications, and has largely focused its operations within the Middle East. It appears the group carries out supply chain attacks, leveraging the trust relationship between organizations to attack their primary targets. FireEye assesses that the group works on behalf of the Iranian government based on infrastructure details that contain references to Iran, use of Iranian infrastructure, and targeting that aligns with nation-state interests.       This group was previously tracked under two distinct groups, APT34 and OilRig, but was combined due to additional reporting giving higher confidence about the overlap of the activity.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0071">Orangeworm</a></td>
+                <td>Orangeworm is a group that has targeted organizations in the healthcare sector in the United States, Europe, and Asia since at least 2015, likely for the purpose of corporate espionage. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0068">PLATINUM</a></td>
+                <td>PLATINUM is an activity group that has targeted victims since at least 2009. The group has focused on targets associated with governments and related organizations in South and Southeast Asia. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0056">PROMETHIUM</a></td>
+                <td>PROMETHIUM is an activity group focused on espionage that has been active since at least 2012. The group has conducted operations globally with a heavy emphasis on Turkish targets. PROMETHIUM has demonstrated similarity to another activity group called NEODYMIUM due to overlapping victim and campaign characteristics.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0040">Patchwork</a></td>
+                <td>Patchwork is a cyberespionage group that was first observed in December 2015. While the group has not been definitively attributed, circumstantial evidence suggests the group may be a pro-Indian or Indian entity. Patchwork has been seen targeting industries related to diplomatic and government agencies. Much of the code used by this group was copied and pasted from online forums. Patchwork was also seen operating spearphishing campaigns targeting U.S. think tank groups in March and April of 2018.    </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0011">PittyTiger</a></td>
+                <td>PittyTiger is a threat group believed to operate out of China that uses multiple different types of malware to maintain command and control.  </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0033">Poseidon Group</a></td>
+                <td>Poseidon Group is a Portuguese-speaking threat group that has been active since at least 2005. The group has a history of using information exfiltrated from victims to blackmail victim companies into contracting the Poseidon Group as a security firm. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0024">Putter Panda</a></td>
+                <td>Putter Panda is a Chinese threat group that has been attributed to Unit 61486 of the 12th Bureau of the PLA’s 3rd General Staff Department (GSD). </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0048">RTM</a></td>
+                <td>RTM is a cybercriminal group that has been active since at least 2015 and is primarily interested in users of remote banking systems in Russia and neighboring countries. The group uses a Trojan by the same name (RTM). </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0075">Rancor</a></td>
+                <td>Rancor is a threat group that has led targeted campaigns against the South East Asia region. Rancor uses politically-motivated lures to entice victims to open malicious documents. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0106">Rocke</a></td>
+                <td>Rocke is an alleged Chinese-speaking adversary whose primary objective appeared to be cryptojacking, or stealing victim system resources for the purposes of mining cryptocurrency. The name Rocke comes from the email address "rocke@live.cn" used to create the wallet which held collected cryptocurrency. Researchers have detected overlaps between Rocke and the Iron Cybercrime Group, though this attribution has not been confirmed.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0034">Sandworm Team</a></td>
+                <td>Sandworm Team is a destructive Russian threat group that has been attributed to Russian GRU Unit 74455 by the U.S. Department of Justice and U.K. National Cyber Security Centre. Sandworm Team's most notable attacks include the 2015 and 2016 targeting of Ukrainian electrical companies and 2017's NotPetya attacks. Sandworm Team has been active since at least 2009.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0029">Scarlet Mimic</a></td>
+                <td>Scarlet Mimic is a threat group that has targeted minority rights activists. This group has not been directly linked to a government source, but the group's motivations appear to overlap with those of the Chinese government. While there is some overlap between IP addresses used by Scarlet Mimic and Putter Panda, it has not been concluded that the groups are the same. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0104">Sharpshooter</a></td>
+                <td>Operation Sharpshooter is the name of a cyber espionage campaign discovered in October 2018 targeting nuclear, defense, energy, and financial companies. Though overlaps between this adversary and Lazarus Group have been noted, definitive links have not been established.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0091">Silence</a></td>
+                <td>Silence is a financially motivated threat actor targeting financial institutions in different countries. The group was first seen in June 2016. Their main targets reside in Russia, Ukraine, Belarus, Azerbaijan, Poland and Kazakhstan. They compromised various banking systems, including the Russian Central Bank's Automated Workstation Client, ATMs, and card processing. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0083">SilverTerrier</a></td>
+                <td>SilverTerrier is a Nigerian threat group that has been seen active since 2014. SilverTerrier mainly targets organizations in high technology, higher education, and manufacturing.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0093">Soft Cell</a></td>
+                <td>Operation Soft Cell is a group that is reportedly affiliated with China and is likely state-sponsored. The group has operated since at least 2012 and has compromised high-profile telecommunications networks.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0054">Sowbug</a></td>
+                <td>Sowbug is a threat group that has conducted targeted attacks against organizations in South America and Southeast Asia, particularly government entities, since at least 2015. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0038">Stealth Falcon</a></td>
+                <td>Stealth Falcon is a threat group that has conducted targeted spyware attacks against Emirati journalists, activists, and dissidents since at least 2012. Circumstantial evidence suggests there could be a link between this group and the United Arab Emirates (UAE) government, but that has not been confirmed. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0086">Stolen Pencil</a></td>
+                <td>Stolen Pencil is a threat group likely originating from DPRK that has been active since at least May 2018. The group appears to have targeted academic institutions, but its motives remain unclear.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0041">Strider</a></td>
+                <td>Strider is a threat group that has been active since at least 2011 and has targeted victims in Russia, China, Sweden, Belgium, Iran, and Rwanda.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0039">Suckfly</a></td>
+                <td>Suckfly is a China-based threat group that has been active since at least 2014. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0062">TA459</a></td>
+                <td>TA459 is a threat group believed to operate out of China that has targeted countries including Russia, Belarus, Mongolia, and others. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0092">TA505</a></td>
+                <td>TA505 is a financially motivated threat group that has been active since at least 2014. The group is known for frequently changing malware and driving global trends in criminal malware distribution.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0088">TEMP.Veles</a></td>
+                <td>TEMP.Veles is a Russia-based threat group that has targeted critical infrastructure. The group has been observed utilizing TRITON, a malware framework designed to manipulate industrial safety systems.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0089">The White Company</a></td>
+                <td>The White Company is a likely state-sponsored threat actor with advanced capabilities. From 2017 through 2018, the group led an espionage campaign called Operation Shaheen targeting government and military organizations in Pakistan.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0028">Threat Group-1314</a></td>
+                <td>Threat Group-1314 is an unattributed threat group that has used compromised credentials to log into a victim's remote access infrastructure. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0027">Threat Group-3390</a></td>
+                <td>Threat Group-3390 is a Chinese threat group that has extensively used strategic Web compromises to target victims.  The group has been active since at least 2010 and has targeted organizations in the aerospace, government, defense, technology, energy, and manufacturing sectors.  </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0076">Thrip</a></td>
+                <td>Thrip is an espionage group that has targeted satellite communications, telecoms, and defense contractor companies in the U.S. and Southeast Asia. The group uses custom malware as well as "living off the land" techniques. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0081">Tropic Trooper</a></td>
+                <td>Tropic Trooper is an unaffiliated threat group that has led targeted campaigns against targets in Taiwan, the Philippines, and Hong Kong. Tropic Trooper focuses on targeting government, healthcare, transportation, and high-tech industries and has been active since 2011.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0010">Turla</a></td>
+                <td>Turla is a Russian-based threat group that has infected victims in over 45 countries, spanning a range of industries including government, embassies, military, education, research and pharmaceutical companies since 2004. Heightened activity was seen in mid-2015. Turla is known for conducting watering hole and spearphishing campaigns and leveraging in-house tools and malware. Turla’s espionage platform is mainly used against Windows machines, but has also been seen used against macOS and Linux machines.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0090">WIRTE</a></td>
+                <td>WIRTE is a threat group that has been active since at least August 2018. The group focuses on targeting Middle East defense and diplomats.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0107">Whitefly</a></td>
+                <td>Whitefly is a cyber espionage group that has been operating since at least 2017. The group has targeted organizations based mostly in Singapore across a wide variety of sectors, and is primarily interested in stealing large amounts of sensitive information. The group has been linked to an attack against Singapore’s largest public health organization, SingHealth.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0112">Windshift</a></td>
+                <td>Windshift is a threat group that has been active since at least 2017, targeting specific individuals for surveillance in government departments and critical infrastructure across the Middle East.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0044">Winnti Group</a></td>
+                <td>Winnti Group is a threat group with Chinese origins that has been active since at least 2010. The group has heavily targeted the gaming industry, but it has also expanded the scope of its targeting.    Some reporting suggests a number of other groups, including Axiom, APT17, and Ke3chang, are closely linked to Winnti Group. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0102">Wizard Spider</a></td>
+                <td>Wizard Spider is a financially motivated criminal group that has been conducting ransomware campaigns since at least August 2018 against a variety of organizations, ranging from major corporations to hospitals.</td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0018">admin@338</a></td>
+                <td>admin@338 is a China-based cyber threat group. It has previously used newsworthy events as lures to deliver malware and has primarily targeted organizations involved in financial, economic, and trade policy, typically using publicly available RATs such as PoisonIvy, as well as some non-public backdoors. </td>
+            </tr><tr>
+
+                <td><a href="/attack_groups/G0045">menuPass</a></td>
+                <td>menuPass is a threat group that appears to originate from China and has been active since approximately 2009. The group has targeted healthcare, defense, aerospace, and government sectors, and has targeted Japanese victims since at least 2014. In 2016 and 2017, the group targeted managed IT service providers, manufacturing and mining companies, and a university.      </td>
+            </tr></tbody>
+</table>
+
+<!-- End Content -->
+
+
+            <!-- ENDSEARCH -->
+            </div>
+            <!-- End Main Content Div -->
+            <!-- Start Scripts -->
+            <script src="/assets/js/jquery-3.2.1.min.js"></script>
+            <script src="/assets/js/popper.min.js"></script>
+            <script src="/assets/js/bootstrap.min.js"></script>
+            <script src="/assets/js/bootstrap.bundle.min.js"></script>
+            <script src="/assets/js/lunr.js"></script>
+            <script src="/assets/js/site.js"></script>
+            <script src="/assets/js/search.js"></script>
+            <!-- End Scripts -->
+            <!-- Start Search Modal -->
+            <div id="search-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="serchModalLabel">Search Results</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Link</th>
+                                <th>Preview</th>
+                            </tr>
+                        </thead>
+                        <tbody id="search-results"></tbody>
+                    </table>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- End Search Modal -->
+        </div>
+        <!-- End Content Container -->
+        <!-- Start Footer -->
+        <footer class="footer p-3 bg-primary footer-expand-lg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <div class="footer-center-responsive my-auto">
+                            <a href="https://www.mitre.org" target="_blank" rel="noopener" aria-label="MITRE">
+                                <img src="/assets/img/mitrelogowhiteontrans.gif" class="mitre-logo-wtrans">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4 footer-responsive-break"></div>
+                    <div class="col-8 col-sm-8 text-center center">
+                        <p>
+                            <strong>
+                                Copyright © 2021, The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.
+                            </strong>
+                        </p>
+                        <div class="row">
+                            <div class="col text-right">
+                                <strong>
+                                    <a href="/resources/privacy" class="footer-link">Privacy Policy</a>
+                                </strong>
+                            </div>
+                            <div class="col text-left">
+                                <strong>
+                                    <a href="/resources/terms-of-use" class="footer-link">Terms of Use</a>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 p-2 footer-responsive-break"></div>
+                    <div class="col">
+                        <div class="footer-float-right-responsive">
+                            <div class="mb-1">
+                                <a href="/resources/contact" class="btn btn-primary w-100">
+                                    <b>Connect with the MITRE Engage Team</b>
+                                </a>
+                            </div>
+                            <div class="mb-1">
+                                <a href="https://twitter.com/mitrecorp" class="btn btn-primary w-100">
+                                    <!-- <i class="fa fa-twitter"></i> -->
+                                    <img src="/assets/img/twitter.png" class="mr-1 twitter-icon">
+                                    <b>@MITREcorp</b>
+                                </a>
+                            </div>
+                            <div class="mb-1">
+                                <a href="https://twitter.com/mitreattack" class="btn btn-primary w-100">
+                                    <!-- <i class="fa fa-twitter"></i> -->
+                                    <img src="/assets/img/twitter.png" class="mr-1 twitter-icon">
+                                    <b>@MITREattack</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- End Body Container -->
+</body>
+<!-- End Body -->
+</html>

@@ -1,0 +1,76 @@
+---
+title: {{ page._name }}
+---
+{%- include header.html -%}
+{%- include nav.html -%}
+{%- include side_nav.html -%}
+{%- include breadcrumb.html -%}
+<!-- Start Content -->
+<div class="row">
+  <div class="col-xs-12 col-sm-8 col-md-8">
+    <h1>Mapping To {{ page._name }}</h1>
+    <p>
+      {%- if page.description -%}
+      {{ page.description }}
+     
+      {%- endif -%}
+      {%- if page.long_description -%}
+      {{ page.long_description }} 
+      {%- endif -%}
+
+      <b>Disclaimer:</b>  We present this mapping to stimulate thinking about engagement activities to take advantage of the historically observed behavior of adversary, not to present all possibilities. We invite you to use this as a guide, understanding that adversary behavior is constantly changing and evolving.
+      <br /><br /><b>Note:</b>  All ATT&CK Group sub-activity mappings have been remapped to their parent activity and were derived from Group Technique mappings in ATT&CK v8.
+    </p>
+  </div>
+  {%- include detail_card.html -%}
+</div>
+<br>
+<table class="table table-bordered table-hover">
+  <thead>
+        <th>ATT&CK® Technique<img class="external-icon" src="{{ site.baseurl }}/assets/img/external_link.png"/></th>
+        <th>Adversary Vulnerability</th>
+        <th>Engagement Activity</th>
+        <th>Engagement Activity Description</th>
+    </thead>
+  <tbody>
+    {%- for groups in site.data.attack_groups -%}
+      {%- if groups.id == page._id -%}
+        {%- assign group = groups -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign has_rows = false -%}
+    {%- for row in site.data.attack_mapping -%}
+   
+      {%- for tech in group.techniques-%}
+  
+        {%- if row.attack_technique == tech.technique_name -%}
+          {%- assign has_rows = true -%}
+          <tr>
+            <td>
+              <a href="https://attack.mitre.org/techniques/{{ row.attack_id }}">
+                {{ row.attack_technique }}
+            </td>
+            <td>{{ row.eav }}</td>
+
+            <td>
+              <a href="{{ site.baseurl }}/activities/{{row.eac_id}}">{{ row.eac }}</a>
+            </td>
+            <td>{{ site.data.activity_details[row.eac_id].description}}</td>
+          </tr>
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- if has_rows == false -%}
+    <tr style="text-align: center;">
+      <td colspan="100%">
+      <i>Stay tuned for more mappings with this adversary. As Techniques are added to the MITRE ATT&CK group page for this adversary we will look to add content here as well.</i>
+      </td>
+    </tr>
+    {%- endif -%}
+  </tbody>
+</table>
+<!-- End Content -->
+
+{%- include footer.html -%}

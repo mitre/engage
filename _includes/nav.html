@@ -1,0 +1,145 @@
+            <!-- Start Nav -->
+            <nav class='navbar navbar-expand-lg navbar-dark bg-primary fixed-top'>
+                <!-- <div class="d-none d-m-block d-lg-block d-xl-block">
+                    <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#sidebar' aria-controls='sidebar' aria-expanded='false' aria-label='Toggle navigation'>
+                        <span id="sidebarCollapse" class='navbar-toggler-icon'></span>
+                    </button>
+                </div>
+                <div class="d-lg-none">
+                    <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+                        <span id="navbarCollapser" class='navbar-toggler-icon'></span>
+                    </button>
+                </div> -->
+                <a class='navbar-brand' href='{{ site.baseurl }}/'><img src="{{ site.baseurl }}/assets/img/engage_logo_white.png" class="engage-logo"></a>
+                <div class='collapse navbar-collapse' id='navbarCollapse'>
+                    <ul class='nav nav-tabs ml-auto'>
+                                <li class="nav-item"><a href="{{ site.baseurl }}/matrix/"  class="nav-link" ><b>Matrix</b></a></li>
+                                                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Goals</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/goals/?show=strategic">Strategic</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/goals/?show=engagement">Engagement</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/goals/">All</a>
+                                       <!--  <a class="dropdown-item" href="{{ site.baseurl }}/strategicgoals">Strategic Goals</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/engagementgoals">Engagement Goals</a> -->
+                                        <hr class="my-3 bg-light" />
+                                        {%- for goal in site.data.goals -%}
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/goals/{{ goal.id }}/">{{ goal.name }}</a>
+                                        {%- endfor -%}
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Approaches</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/approaches/?show=strategic">Strategic</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/approaches/?show=engagement">Engagement</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/approaches/">All</a>
+                                       <!--  <a class="dropdown-item" href="{{ site.baseurl }}/strategicapproaches">Strategic Approaches</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/engagementapproaches">Engagement Approaches</a> -->
+                                        <hr class="my-3 bg-light" />
+                                        {%- for approach in site.data.approaches -%}
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/approaches/{{ approach.id }}/">{{ approach.name }}</a>
+                                        {%- endfor -%}
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Activities</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/activities/?show=strategic">Strategic</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/activities/?show=engagement">Engagement</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/activities/">All</a>
+                                       <!--  <a class="dropdown-item" href="{{ site.baseurl }}/strategicapproaches">Strategic Approaches</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/engagementapproaches">Engagement Approaches</a> -->
+                                       <!--  <hr class="my-3 bg-light" />
+                                        {%- for activity in site.data.activities -%}
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/activities/{{ activity.id }}/">{{ activity.name }}</a>
+                                        {%- endfor -%} -->
+                                    </div>
+                                </li>
+                                 <!-- <li class="nav-item"><a href="{{ site.baseurl }}/activities/?filter=strategic"  class="nav-link" ><b>Activities</b></a></li> -->
+                                 <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Activities</b>
+                                    </a>
+
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/activities">All</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/strategicactivities">Strategic Activities</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/engagementactivities">Engagement Activities</a>
+                                      
+                                    </div>
+                                </li> -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>ATT&CK&#174 Mapping</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/">Overview</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_groups/">ATT&CK Groups</a>
+                                        <hr class="my-3 bg-light" />
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0043/">Reconnaissance</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0042/">Resource Development</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0001/">Initial Access</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0002/">Execution</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0003/">Persistence</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0004/">Privilege Escalation</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0005/">Defense Evasion</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0006/">Credential Access</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0007/">Discovery</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0008/">Lateral Movement</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0009/">Collection</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0010/">Exfiltration</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0011/">Command and Control</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/TA0040/">Impact</a>
+                                        <hr class="my-3 bg-light" />
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/attack_mapping/mapping_all.html">Complete Mapping</a>
+                                    </div>
+                                </li>
+                            
+                        
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}/resources/" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b>Resources</b>
+                                    </a>
+                                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/resources/getting-started">Getting Started</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/resources/shield">Moving from Shield to Engage</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/resources/faq">FAQ</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/resources/related-projects">Related Projects</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/resources/contribute">Contribute</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/resources/updates">Updates</a>
+                                        <a class="dropdown-item" href="{{ site.baseurl }}/resources/contact">Contact Us</a>
+                                    </div>
+                                </li>
+                                <!-- <li class="nav-item"><a href="https://medium.com/mitre-shield"  class="nav-link" target="_blank"><b>Blog</b><img class="external-icon" src="{{ site.baseurl }}/assets/img/external-site.svg"></a></li> -->
+                        <li class="nav-item">
+                            <form id="site-search" class="form-inline my-2 my-lg-0">
+                                <input id="search-term" class="form-control mr-sm-2" type="text" placeholder="Search">
+                                <button class="btn btn-secondary my-2 my-sm-0" data-toggle="modal" data-target="#search-modal" type="submit">Search</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Nav -->
+            <!-- Start Banner -->
+
+            {% if site.banner.size > 0 %}
+
+            <div class="alert {{ site.banner_type }} text-center">
+                <strong>{{ site.banner }}</strong>
+            </div>
+            {% endif %}
+            <!-- End Banner -->

@@ -1,0 +1,59 @@
+---
+title: page._name
+---
+{%- include header.html -%}
+{%- include nav.html -%}
+{%- include side_nav.html -%}
+{%- include breadcrumb.html -%}
+<!-- Start Content -->
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8">
+        <h1>{{ page._name }}</h1>
+        <p>
+            {{ page.description }}
+            <br />
+            <br />
+            {{ page.long_description }}
+        </p>
+    </div>
+    {%- include detail_card.html -%}
+</div>
+
+{%- if site.data.activity_details[page._id].type == "Engagement" -%}
+
+Whenever an adversary interacts with the environment, their actions reveal vulnerabilities. Defenders can utilize engagememnt activities to take advantege of such weaknesses.
+
+<br><br>
+The following table lists the adversary tactics on the left and the revealed vulnerability on the right that can be exploited by the defender using <b>{{page._name}}</b>.
+<br><br>
+
+<table id="ttable" class="table table-bordered table-hover">
+    <thead>
+        <th>ATT&CK® Tactics<img class="external-icon" src="{{ site.baseurl }}/assets/img/external_link.png"/></th>
+        <th>Adversary Vulnerability Presented</th>
+       
+    </thead>
+    <tbody>
+        {%- for vulnerability in site.data.activity_details[page._id].vulnerabilities -%}
+            <tr>
+                <td>
+                    {%- for tactic in site.data.activity_details[page._id][vulnerability.id] -%}
+                        <a href="https://attack.mitre.org/tactics/{{ tactic.id }}"> {{ tactic.name }}</a>
+                        {%- if forloop.last == false -%}
+                        ,&nbsp;
+                        {%- endif -%}
+                    {%- endfor -%}
+                </td>
+                <td>{{ vulnerability.eav }}</td>
+            </tr>
+         {%- endfor -%}
+    </tbody>
+</table>
+
+{%- endif -%}
+<br><br>
+
+<!-- End Content -->
+
+{%- include footer.html -%}

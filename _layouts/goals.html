@@ -1,0 +1,37 @@
+{%- include header.html -%}
+{%- include nav.html -%}
+{%- include side_nav.html -%}
+{%- include breadcrumb.html -%}
+<!-- Start Content -->
+<div class="row">
+    <div class="col-xs-12 col-sm-8">
+        <h1>{{ page._name }}</h1>
+        
+        <p>
+          {{ page.description }}
+          <br />
+          <br />
+          {{ page.long_description }}
+        </p>
+    </div>
+    {%- include detail_card.html -%}
+</div>
+<h2>Approaches</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr><th>Approach Name</th><th>Description</th><th>ID</th></tr>
+    </thead>
+    <tbody>
+         {%- for approach_id in site.data.goal_details[page._id].approaches -%}
+            <tr>
+                <td><a href="{{ site.baseurl }}/approaches/{{approach_id}}"> {{ site.data.approach_details[approach_id].name}}</a></td>
+                <td>{{ site.data.approach_details[approach_id].description }}</td>
+                <td>{{ approach_id}}</td>
+            </tr>
+        {%- endfor -%}
+    </tbody>
+</table>
+
+<!-- End Content -->
+
+{%- include footer.html -%}

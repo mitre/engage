@@ -1,0 +1,27 @@
+            <!-- Start Side Nav -->
+            <!-- <div class="wrapper">
+                <nav id="sidebar" class="collapse overflow-auto disable-scrollbars bg-primary">
+                    <div class="sidebar nav px-2" id="v-tab" role="tablist" aria-orientation="vertical">
+                        <span class="heading text-white" id="v-home-tab" aria-selected="false">Active Defense Approaches</span>
+                        {%- for approach in site.data.navigation -%}
+                        <div id="{{ approach.id }}" class="sidenav">
+                            <div class="sidenav-head">
+                                <a href="{{ site.baseurl }}/{{ approach.url }}"><span class="text-white">{{ approach.title }}</span></a>
+                                <div class="expand-button collapsed text-white navbar-light" id="{{ approach.id }}-header" data-toggle="collapse" data-target="#{{ approach.id }}-body" aria-expanded="false" aria-controls="{{ approach.id }}-body">
+                                </div>
+                            </div>
+                            <div id="{{ approach.id }}-body" class="sidenav-body collapse" aria-labelledby="{{ approach.id }}-header">
+                                {%- for sub_item in approach.sublinks -%}
+                                <div class="sidenav">
+                                    <div class="sidenav-head" id="{{ approach.id }}-{{ sub_item.id }}">
+                                        <a href="{{ site.baseurl }}/activities/{{ sub_item.id }}/"><span class="text-white">{{ sub_item.title }}</span></a>
+                                    </div>
+                                </div>
+                                {%- endfor -%}
+                            </div>
+                        </div>
+                        {%- endfor -%}
+                    </div>
+                </nav>
+            </div> -->
+            <!-- End Side Nav -->

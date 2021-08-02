@@ -1,0 +1,733 @@
+[
+    {
+        "url": "approaches/DTA0001",
+        "title": "Channel",
+        "id": "DTA0001",
+        "sublinks": [
+            {
+                "url": "activities/DTE0001",
+                "title": "Admin Access",
+                "id": "DTE0001"
+            },
+            {
+                "url": "activities/DTE0003",
+                "title": "API Monitoring",
+                "id": "DTE0003"
+            },
+            {
+                "url": "activities/DTE0004",
+                "title": "Application Diversity",
+                "id": "DTE0004"
+            },
+            {
+                "url": "activities/DTE0010",
+                "title": "Decoy Account",
+                "id": "DTE0010"
+            },
+            {
+                "url": "activities/DTE0011",
+                "title": "Decoy Content ",
+                "id": "DTE0011"
+            },
+            {
+                "url": "activities/DTE0012",
+                "title": "Decoy Credentials",
+                "id": "DTE0012"
+            },
+            {
+                "url": "activities/DTE0013",
+                "title": "Decoy Diversity",
+                "id": "DTE0013"
+            },
+            {
+                "url": "activities/DTE0014",
+                "title": "Decoy Network",
+                "id": "DTE0014"
+            },
+            {
+                "url": "activities/DTE0015",
+                "title": "Decoy Persona",
+                "id": "DTE0015"
+            },
+            {
+                "url": "activities/DTE0016",
+                "title": "Decoy Process",
+                "id": "DTE0016"
+            },
+            {
+                "url": "activities/DTE0017",
+                "title": "Decoy System",
+                "id": "DTE0017"
+            },
+            {
+                "url": "activities/DTE0018",
+                "title": "Detonate Malware",
+                "id": "DTE0018"
+            },
+            {
+                "url": "activities/DTE0023",
+                "title": "Migrate Attack Vector",
+                "id": "DTE0023"
+            },
+            {
+                "url": "activities/DTE0025",
+                "title": "Network Diversity",
+                "id": "DTE0025"
+            },
+            {
+                "url": "activities/DTE0026",
+                "title": "Network Manipulation",
+                "id": "DTE0026"
+            },
+            {
+                "url": "activities/DTE0029",
+                "title": "Peripheral Management",
+                "id": "DTE0029"
+            },
+            {
+                "url": "activities/DTE0030",
+                "title": "Pocket Litter",
+                "id": "DTE0030"
+            },
+            {
+                "url": "activities/DTE0032",
+                "title": "Security Controls",
+                "id": "DTE0032"
+            },
+            {
+                "url": "activities/DTE0036",
+                "title": "Software Manipulation",
+                "id": "DTE0036"
+            }
+        ]
+    },
+    {
+        "url": "approaches/DTA0002",
+        "title": "Collect",
+        "id": "DTA0002",
+        "sublinks": [
+            {
+                "url": "activities/DTE0003",
+                "title": "API Monitoring",
+                "id": "DTE0003"
+            },
+            {
+                "url": "activities/DTE0004",
+                "title": "Application Diversity",
+                "id": "DTE0004"
+            },
+            {
+                "url": "activities/DTE0005",
+                "title": "Backup and Recovery",
+                "id": "DTE0005"
+            },
+            {
+                "url": "activities/DTE0010",
+                "title": "Decoy Account",
+                "id": "DTE0010"
+            },
+            {
+                "url": "activities/DTE0011",
+                "title": "Decoy Content ",
+                "id": "DTE0011"
+            },
+            {
+                "url": "activities/DTE0012",
+                "title": "Decoy Credentials",
+                "id": "DTE0012"
+            },
+            {
+                "url": "activities/DTE0014",
+                "title": "Decoy Network",
+                "id": "DTE0014"
+            },
+            {
+                "url": "activities/DTE0017",
+                "title": "Decoy System",
+                "id": "DTE0017"
+            },
+            {
+                "url": "activities/DTE0018",
+                "title": "Detonate Malware",
+                "id": "DTE0018"
+            },
+            {
+                "url": "activities/DTE0019",
+                "title": "Email Manipulation",
+                "id": "DTE0019"
+            },
+            {
+                "url": "activities/DTE0021",
+                "title": "Hunting",
+                "id": "DTE0021"
+            },
+            {
+                "url": "activities/DTE0025",
+                "title": "Network Diversity",
+                "id": "DTE0025"
+            },
+            {
+                "url": "activities/DTE0027",
+                "title": "Network Monitoring",
+                "id": "DTE0027"
+            },
+            {
+                "url": "activities/DTE0028",
+                "title": "PCAP Collection",
+                "id": "DTE0028"
+            },
+            {
+                "url": "activities/DTE0029",
+                "title": "Peripheral Management",
+                "id": "DTE0029"
+            },
+            {
+                "url": "activities/DTE0031",
+                "title": "Protocol Decoder",
+                "id": "DTE0031"
+            },
+            {
+                "url": "activities/DTE0032",
+                "title": "Security Controls",
+                "id": "DTE0032"
+            },
+            {
+                "url": "activities/DTE0034",
+                "title": "System Activity Monitoring",
+                "id": "DTE0034"
+            },
+            {
+                "url": "activities/DTE0036",
+                "title": "Software Manipulation",
+                "id": "DTE0036"
+            }
+        ]
+    },
+    {
+        "url": "approaches/DTA0003",
+        "title": "Contain",
+        "id": "DTA0003",
+        "sublinks": [
+            {
+                "url": "activities/DTE0001",
+                "title": "Admin Access",
+                "id": "DTE0001"
+            },
+            {
+                "url": "activities/DTE0006",
+                "title": "Baseline",
+                "id": "DTE0006"
+            },
+            {
+                "url": "activities/DTE0010",
+                "title": "Decoy Account",
+                "id": "DTE0010"
+            },
+            {
+                "url": "activities/DTE0014",
+                "title": "Decoy Network",
+                "id": "DTE0014"
+            },
+            {
+                "url": "activities/DTE0018",
+                "title": "Detonate Malware",
+                "id": "DTE0018"
+            },
+            {
+                "url": "activities/DTE0020",
+                "title": "Hardware Manipulation",
+                "id": "DTE0020"
+            },
+            {
+                "url": "activities/DTE0022",
+                "title": "Isolation",
+                "id": "DTE0022"
+            },
+            {
+                "url": "activities/DTE0023",
+                "title": "Migrate Attack Vector",
+                "id": "DTE0023"
+            },
+            {
+                "url": "activities/DTE0026",
+                "title": "Network Manipulation",
+                "id": "DTE0026"
+            },
+            {
+                "url": "activities/DTE0032",
+                "title": "Security Controls",
+                "id": "DTE0032"
+            },
+            {
+                "url": "activities/DTE0036",
+                "title": "Software Manipulation",
+                "id": "DTE0036"
+            }
+        ]
+    },
+    {
+        "url": "approaches/DTA0004",
+        "title": "Detect",
+        "id": "DTA0004",
+        "sublinks": [
+            {
+                "url": "activities/DTE0003",
+                "title": "API Monitoring",
+                "id": "DTE0003"
+            },
+            {
+                "url": "activities/DTE0004",
+                "title": "Application Diversity",
+                "id": "DTE0004"
+            },
+            {
+                "url": "activities/DTE0006",
+                "title": "Baseline",
+                "id": "DTE0006"
+            },
+            {
+                "url": "activities/DTE0007",
+                "title": "Behavioral Analytics",
+                "id": "DTE0007"
+            },
+            {
+                "url": "activities/DTE0010",
+                "title": "Decoy Account",
+                "id": "DTE0010"
+            },
+            {
+                "url": "activities/DTE0011",
+                "title": "Decoy Content ",
+                "id": "DTE0011"
+            },
+            {
+                "url": "activities/DTE0012",
+                "title": "Decoy Credentials",
+                "id": "DTE0012"
+            },
+            {
+                "url": "activities/DTE0013",
+                "title": "Decoy Diversity",
+                "id": "DTE0013"
+            },
+            {
+                "url": "activities/DTE0014",
+                "title": "Decoy Network",
+                "id": "DTE0014"
+            },
+            {
+                "url": "activities/DTE0015",
+                "title": "Decoy Persona",
+                "id": "DTE0015"
+            },
+            {
+                "url": "activities/DTE0017",
+                "title": "Decoy System",
+                "id": "DTE0017"
+            },
+            {
+                "url": "activities/DTE0019",
+                "title": "Email Manipulation",
+                "id": "DTE0019"
+            },
+            {
+                "url": "activities/DTE0021",
+                "title": "Hunting",
+                "id": "DTE0021"
+            },
+            {
+                "url": "activities/DTE0022",
+                "title": "Isolation",
+                "id": "DTE0022"
+            },
+            {
+                "url": "activities/DTE0026",
+                "title": "Network Manipulation",
+                "id": "DTE0026"
+            },
+            {
+                "url": "activities/DTE0027",
+                "title": "Network Monitoring",
+                "id": "DTE0027"
+            },
+            {
+                "url": "activities/DTE0028",
+                "title": "PCAP Collection",
+                "id": "DTE0028"
+            },
+            {
+                "url": "activities/DTE0030",
+                "title": "Pocket Litter",
+                "id": "DTE0030"
+            },
+            {
+                "url": "activities/DTE0031",
+                "title": "Protocol Decoder",
+                "id": "DTE0031"
+            },
+            {
+                "url": "activities/DTE0033",
+                "title": "Standard Operating Procedure",
+                "id": "DTE0033"
+            },
+            {
+                "url": "activities/DTE0034",
+                "title": "System Activity Monitoring",
+                "id": "DTE0034"
+            },
+            {
+                "url": "activities/DTE0035",
+                "title": "User Training",
+                "id": "DTE0035"
+            },
+            {
+                "url": "activities/DTE0036",
+                "title": "Software Manipulation",
+                "id": "DTE0036"
+            }
+        ]
+    },
+    {
+        "url": "approaches/DTA0005",
+        "title": "Disrupt",
+        "id": "DTA0005",
+        "sublinks": [
+            {
+                "url": "activities/DTE0001",
+                "title": "Admin Access",
+                "id": "DTE0001"
+            },
+            {
+                "url": "activities/DTE0004",
+                "title": "Application Diversity",
+                "id": "DTE0004"
+            },
+            {
+                "url": "activities/DTE0005",
+                "title": "Backup and Recovery",
+                "id": "DTE0005"
+            },
+            {
+                "url": "activities/DTE0006",
+                "title": "Baseline",
+                "id": "DTE0006"
+            },
+            {
+                "url": "activities/DTE0007",
+                "title": "Behavioral Analytics",
+                "id": "DTE0007"
+            },
+            {
+                "url": "activities/DTE0011",
+                "title": "Decoy Content ",
+                "id": "DTE0011"
+            },
+            {
+                "url": "activities/DTE0012",
+                "title": "Decoy Credentials",
+                "id": "DTE0012"
+            },
+            {
+                "url": "activities/DTE0014",
+                "title": "Decoy Network",
+                "id": "DTE0014"
+            },
+            {
+                "url": "activities/DTE0019",
+                "title": "Email Manipulation",
+                "id": "DTE0019"
+            },
+            {
+                "url": "activities/DTE0020",
+                "title": "Hardware Manipulation",
+                "id": "DTE0020"
+            },
+            {
+                "url": "activities/DTE0022",
+                "title": "Isolation",
+                "id": "DTE0022"
+            },
+            {
+                "url": "activities/DTE0026",
+                "title": "Network Manipulation",
+                "id": "DTE0026"
+            },
+            {
+                "url": "activities/DTE0032",
+                "title": "Security Controls",
+                "id": "DTE0032"
+            },
+            {
+                "url": "activities/DTE0033",
+                "title": "Standard Operating Procedure",
+                "id": "DTE0033"
+            },
+            {
+                "url": "activities/DTE0035",
+                "title": "User Training",
+                "id": "DTE0035"
+            },
+            {
+                "url": "activities/DTE0036",
+                "title": "Software Manipulation",
+                "id": "DTE0036"
+            }
+        ]
+    },
+    {
+        "url": "approaches/DTA0006",
+        "title": "Facilitate",
+        "id": "DTA0006",
+        "sublinks": [
+            {
+                "url": "activities/DTE0001",
+                "title": "Admin Access",
+                "id": "DTE0001"
+            },
+            {
+                "url": "activities/DTE0004",
+                "title": "Application Diversity",
+                "id": "DTE0004"
+            },
+            {
+                "url": "activities/DTE0007",
+                "title": "Behavioral Analytics",
+                "id": "DTE0007"
+            },
+            {
+                "url": "activities/DTE0008",
+                "title": "Burn-In",
+                "id": "DTE0008"
+            },
+            {
+                "url": "activities/DTE0010",
+                "title": "Decoy Account",
+                "id": "DTE0010"
+            },
+            {
+                "url": "activities/DTE0011",
+                "title": "Decoy Content ",
+                "id": "DTE0011"
+            },
+            {
+                "url": "activities/DTE0012",
+                "title": "Decoy Credentials",
+                "id": "DTE0012"
+            },
+            {
+                "url": "activities/DTE0013",
+                "title": "Decoy Diversity",
+                "id": "DTE0013"
+            },
+            {
+                "url": "activities/DTE0015",
+                "title": "Decoy Persona",
+                "id": "DTE0015"
+            },
+            {
+                "url": "activities/DTE0017",
+                "title": "Decoy System",
+                "id": "DTE0017"
+            },
+            {
+                "url": "activities/DTE0025",
+                "title": "Network Diversity",
+                "id": "DTE0025"
+            },
+            {
+                "url": "activities/DTE0026",
+                "title": "Network Manipulation",
+                "id": "DTE0026"
+            },
+            {
+                "url": "activities/DTE0029",
+                "title": "Peripheral Management",
+                "id": "DTE0029"
+            },
+            {
+                "url": "activities/DTE0030",
+                "title": "Pocket Litter",
+                "id": "DTE0030"
+            },
+            {
+                "url": "activities/DTE0032",
+                "title": "Security Controls",
+                "id": "DTE0032"
+            },
+            {
+                "url": "activities/DTE0036",
+                "title": "Software Manipulation",
+                "id": "DTE0036"
+            }
+        ]
+    },
+    {
+        "url": "approaches/DTA0007",
+        "title": "Legitimize",
+        "id": "DTA0007",
+        "sublinks": [
+            {
+                "url": "activities/DTE0004",
+                "title": "Application Diversity",
+                "id": "DTE0004"
+            },
+            {
+                "url": "activities/DTE0008",
+                "title": "Burn-In",
+                "id": "DTE0008"
+            },
+            {
+                "url": "activities/DTE0010",
+                "title": "Decoy Account",
+                "id": "DTE0010"
+            },
+            {
+                "url": "activities/DTE0011",
+                "title": "Decoy Content ",
+                "id": "DTE0011"
+            },
+            {
+                "url": "activities/DTE0012",
+                "title": "Decoy Credentials",
+                "id": "DTE0012"
+            },
+            {
+                "url": "activities/DTE0013",
+                "title": "Decoy Diversity",
+                "id": "DTE0013"
+            },
+            {
+                "url": "activities/DTE0014",
+                "title": "Decoy Network",
+                "id": "DTE0014"
+            },
+            {
+                "url": "activities/DTE0015",
+                "title": "Decoy Persona",
+                "id": "DTE0015"
+            },
+            {
+                "url": "activities/DTE0016",
+                "title": "Decoy Process",
+                "id": "DTE0016"
+            },
+            {
+                "url": "activities/DTE0017",
+                "title": "Decoy System",
+                "id": "DTE0017"
+            },
+            {
+                "url": "activities/DTE0025",
+                "title": "Network Diversity",
+                "id": "DTE0025"
+            },
+            {
+                "url": "activities/DTE0030",
+                "title": "Pocket Litter",
+                "id": "DTE0030"
+            }
+        ]
+    },
+    {
+        "url": "approaches/DTA0008",
+        "title": "Test",
+        "id": "DTA0008",
+        "sublinks": [
+            {
+                "url": "activities/DTE0001",
+                "title": "Admin Access",
+                "id": "DTE0001"
+            },
+            {
+                "url": "activities/DTE0003",
+                "title": "API Monitoring",
+                "id": "DTE0003"
+            },
+            {
+                "url": "activities/DTE0004",
+                "title": "Application Diversity",
+                "id": "DTE0004"
+            },
+            {
+                "url": "activities/DTE0005",
+                "title": "Backup and Recovery",
+                "id": "DTE0005"
+            },
+            {
+                "url": "activities/DTE0010",
+                "title": "Decoy Account",
+                "id": "DTE0010"
+            },
+            {
+                "url": "activities/DTE0011",
+                "title": "Decoy Content ",
+                "id": "DTE0011"
+            },
+            {
+                "url": "activities/DTE0012",
+                "title": "Decoy Credentials",
+                "id": "DTE0012"
+            },
+            {
+                "url": "activities/DTE0013",
+                "title": "Decoy Diversity",
+                "id": "DTE0013"
+            },
+            {
+                "url": "activities/DTE0014",
+                "title": "Decoy Network",
+                "id": "DTE0014"
+            },
+            {
+                "url": "activities/DTE0015",
+                "title": "Decoy Persona",
+                "id": "DTE0015"
+            },
+            {
+                "url": "activities/DTE0017",
+                "title": "Decoy System",
+                "id": "DTE0017"
+            },
+            {
+                "url": "activities/DTE0018",
+                "title": "Detonate Malware",
+                "id": "DTE0018"
+            },
+            {
+                "url": "activities/DTE0023",
+                "title": "Migrate Attack Vector",
+                "id": "DTE0023"
+            },
+            {
+                "url": "activities/DTE0025",
+                "title": "Network Diversity",
+                "id": "DTE0025"
+            },
+            {
+                "url": "activities/DTE0026",
+                "title": "Network Manipulation",
+                "id": "DTE0026"
+            },
+            {
+                "url": "activities/DTE0029",
+                "title": "Peripheral Management",
+                "id": "DTE0029"
+            },
+            {
+                "url": "activities/DTE0030",
+                "title": "Pocket Litter",
+                "id": "DTE0030"
+            },
+            {
+                "url": "activities/DTE0032",
+                "title": "Security Controls",
+                "id": "DTE0032"
+            },
+            {
+                "url": "activities/DTE0036",
+                "title": "Software Manipulation",
+                "id": "DTE0036"
+            }
+        ]
+    }
+]

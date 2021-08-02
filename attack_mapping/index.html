@@ -1,0 +1,97 @@
+---
+
+layout: default-data
+title: Mapping Overview
+custom_css: default
+breadcrumb: ATT&CK® Mapping Overview
+
+---
+
+<h1>ATT&CK® Mapping Overview</h1>
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-8">
+    <p>
+     By mapping the various Engagement Activities to ATT&CK, we can ensure that each activity in Engage is driven by observed adversary behavior. In adversary engagement operations it can be tempting to try to anticipate the adversary actions. However, without extensive understanding of the specific threat, this line of thinking can lead the defender to make incorrect or ineffective decisions. By mapping to ATT&CK, we can ensure that our chosen engagement activities are appropriate for the target adversary. In the below table, each approach in the ATT&CK framework is shown individually. Clicking on a specific approach will show a detail page with the following information:
+        <ul>
+            <li>ATT&CK ID & Name – The ATT&CK Technique ID and Name</li>
+            <li>Adversary Vulnerability – The vulnerability that the adversary exposes when they engage in a specific behavior</li>
+            <li>Engagement Activity – The action the defender can take to take advantage of the vulnerability the adversary has exposed</li>
+            
+        </ul>
+
+        When an adversary engages in a specific behavior, they are vulnerable expose an unintended weakness. By looking at each ATT&CK activity, we can examine the weaknesses revealed and identify an engagement activity or activities to exploit this weakness.
+
+        <p>
+        In our first release of MITRE Engage we have chosen not to include any specific activity implementations or use cases in these mappings. To provide some guidance, we have included expanded definitions for each Activity including concrete examples. We hope these definitions will provide some examples of the art of the possible. If you have questions, please reach out! We would be happy to share our past operational implementations or discuss your ideas.
+
+        <p> In the future we hope to find new ways to dive into specific implementations, including collecting open source examples of activity implementations either from vendor products or individual practitioners.
+
+       
+    </p>
+  </div>
+</div>
+<h3>ATT&CK® Mapping by Tactic</h3>
+<table class="table table-bordered table-hover">
+    <thead>
+        <th>ATT&CK® Tactic</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0043">TA0043 - Reconnaissance</a></td>
+        <td> The adversary is trying to gather information they can use to plan future operations.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0042">TA0042 - Resource Development</a></td>
+        <td> The adversary is trying to establish resources they can use to support operations.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0001">TA0001 - Initial Access</a></td>
+        <td>The adversary is trying to get into your network.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0002">TA0002 - Execution</a></td>
+        <td>The adversary is trying to run malicious code.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0003">TA0003 - Persistence</a></td>
+        <td>The adversary is trying to maintain their foothold.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0004">TA0004 - Privilege Escalation</a></td>
+        <td>The adversary is trying to gain higher-level permissions.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0005">TA0005 - Defense Evasion</a></td>
+        <td>The adversary is trying to avoid being detected.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0006">TA0006 - Credential Access</a></td>
+        <td>The adversary is trying to steal account names and passwords.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0007">TA0007 - Discovery</a></td>
+        <td>The adversary is trying to figure out your environment.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0008">TA0008 - Lateral Movement</a></td>
+        <td>The adversary is trying to move through your environment.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0009">TA0009 - Collection</a></td>
+        <td>The adversary is trying to gather data of interest to their goal.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0010">TA0010 - Exfiltration</a></td>
+        <td>The adversary is trying to steal data.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0011">TA0011 - Command and Control</a></td>
+        <td>The adversary is trying to communicate with compromised systems to control them.</td>
+    </tr>
+    <tr>
+        <td><a href="{{ site.baseurl }}/attack_mapping/TA0040">TA0040 - Impact</a></td>
+        <td>The adversary is trying to manipulate, interrupt, or destroy your systems and data.</td>
+    </tr>
+</tbody>
+</table>
