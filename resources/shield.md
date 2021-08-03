@@ -43,14 +43,14 @@ While Shield was an active defense knowledge base, MITRE Engage has tightened th
 
 As we transition from MITRE Shield to MITRE Engage, you may be asking yourself, "Where do I start?" Below is a step-by-step guide for transitioning from Shield to Engage.
 
-1. **Implement key changes to the Engage structure:**
-    - Tactics have been renamed Approaches
-    - Techniques have been renamed Activities
-    - Goals have been added as a category above Approaches
-    - Each of these categories has been broken into two sets with unique IDs, Strategic Goals/Approaches/Activities and Engagement Goals/Approaches/Activities. The overall structure is: Activities are a subset of Approaches, Approaches are a subset of Goals.
+#### *Implement key changes to the Engage structure*
+* Tactics have been renamed Approaches
+*  Techniques have been renamed Activities
+* Goals have been added as a category above Approaches
+*  Each of these categories has been broken into two sets with unique IDs, Strategic Goals/Approaches/Activities and Engagement Goals/Approaches/Activities. The overall structure is: Activities are a subset of Approaches, Approaches are a subset of Goals.
 
 
-2. **Remap all the Activities.**
+#### *Remap all the Activities.*
 
 Please note that Approaches have changed significantly from Shield's original Tactics. With the addition of Goals, we made big changes that make a one-to-one mapping from Tactics to Approaches difficult. Adding Goals as a super category allowed us to make each Approach more focused. As a result, we were able to reduce much of the overlap seen in Shield. While we believe the pros outweigh the cons, we recognize that this makes the conversion from Tactic to Approach more challenging. In the end we believe the change will provide greater clarity and ease of understanding.
 
@@ -76,21 +76,37 @@ We have identified the following 5 key types of changes when mapping Techniques 
 
 Each of these types of changes is represented in the &quot;Change Type&quot; column of the CSVs or &quot;change-type&quot; field in the JSON. Some of these changes are simpler to implement than others. To help with the transition, we&#39;ve outlined six tips on how to move from Shield to Engage.
 
-**Step 1: Start with the easy to remap activities first and automate.**  For content mapped to Shield, start by replacing the existing technique ID from the value in the &quot;TID&quot; column with the value in the &quot;New ID&quot; column if there is one. Next, update the technique name to match the value in &quot;New Activity Name.&quot; This remap fixes the majority of the changes for Technique Became Activity, Technique Name was Changed, Technique Name was Changed and Scope was Broadened, as well as Multiple Techniques Became Activity. We&#39;ll handle the remaining two cases in Step 2. In cases where the scope of the Activity was broadened, it&#39;s also worth checking the &quot;Note&quot; field in the CSV and &quot;explanation&quot; in the JSON.
+**Step 1: Start with the easy to remap activities first and automate.** 
 
-**_Technique Became Activity_** For Techniques labeled &quot;Technique Became Activity&quot; the name is the same in Engage as in it was in Shield but note that the definitions and IDs will be new. For example, Detonate Malware (Shield: DTE0018) remains Detonate Malware (Engage: EAC0013).
+ For content mapped to Shield, start by replacing the existing technique ID from the value in the &quot;TID&quot; column with the value in the &quot;New ID&quot; column if there is one. Next, update the technique name to match the value in &quot;New Activity Name.&quot; This remap fixes the majority of the changes for Technique Became Activity, Technique Name was Changed, Technique Name was Changed and Scope was Broadened, as well as Multiple Techniques Became Activity. We&#39;ll handle the remaining two cases in Step 2. In cases where the scope of the Activity was broadened, it&#39;s also worth checking the &quot;Notes&quot; field in the CSV and &quot;explanation&quot; in the JSON.
 
-**_New Activity Added_** No mappings from previous Techniques will be impacted. Examples of new Activities include Information Manipulation (EAC0015) and Storyboarding (SAC0003).
+*Technique Became Activity*
 
-**_Multiple Techniques Became New Activity_** For Techniques labeled &quot;Multiple Techniques Became New Activity,&quot; a new Activity was created covering the scope and content of multiple previous Techniques. For example, Decoy Account (Shield ID: DTE0010), Decoy Content (Shield ID: DTE0011), Decoy Credentials (Shield ID: DTE0012), Decoy Process (Shield ID: DTE0016), and Decoy Systems (Shield ID: DTE0017) merged into Decoy Artifacts and Systems (EAC0005).
+For Techniques labeled &quot;Technique Became Activity&quot; the name is the same in Engage as in it was in Shield but note that the definitions and IDs will be new. For example, Detonate Malware (Shield: DTE0018) remains Detonate Malware (Engage: EAC0013).
 
-**_Technique Name was Changed_** For Techniques labeled &quot;Technique Name was Changed,&quot; a new Activity was created covering the same scope and content of a previous Technique with a new name. For example, Decoy Persona (Shield ID: DTE0015) is now Personas (EAC0012).
+*New Activity Added*
 
-**_Technique Name was Changed and Scope was Broadened_** For Techniques labeled &quot;Technique Name was Changed,&quot; a new Activity was created covering a larger scope and content from a previous Technique with a new name. For example, PCAP Collection (Shield ID: DTE0028) is a component of Network Monitoring (EAC0002).
+No mappings from previous Techniques will be impacted. Examples of new Activities include Information Manipulation (EAC0015) and Storyboarding (SAC0003).
 
-**Step 2: Look at the deprecated Techniques to see what changed.** This is where some manual effort will be required. Deprecated techniques are not as straightforward. For techniques labeled as &quot;Deprecated,&quot; we removed them from Engage without replacing them because we felt they did not fit into Engage. Often, these activities focused more broadly on good cyber hygiene practices, which are no longer in scope for Engage. For example, User Training (Shield ID: DTE0035) was removed because we felt this practice was not within the tighter scope of denial, deception, and adversary engagement.
+*Multiple Techniques Became New Activity* 
 
-**Step 3: Review if the New Goals Categories Change Your Mappings.** If you want to take full advantage of Engage, it is important to consider each goal in the context of a given goal it is mapped to. The implementation behind a given activity is influenced greatly by the goal it is mapped to. For example, Decoy Artifacts and Systems maps to both Expose and Affect. A Decoy Artifact intended to expose the adversary may be an interesting document with a tripwire. On the other hand, a Decoy Artifact mean to Affect an adversary may be an interesting document that is so large the adversary wastes time attempting to encrypt and exfiltrate the artifact. In both cases, the Decoy Artifact is an interesting document in the environment, but the differing goals result in different implementations of the document (one document has a tripwire, one is massive in size). Make sure each of your existing mappings accurately reflects not only the Activity definition, but also the corresponding Approach and Goal definitions.
+For Techniques labeled &quot;Multiple Techniques Became New Activity,&quot; a new Activity was created covering the scope and content of multiple previous Techniques. For example, Decoy Account (Shield ID: DTE0010), Decoy Content (Shield ID: DTE0011), Decoy Credentials (Shield ID: DTE0012), Decoy Process (Shield ID: DTE0016), and Decoy Systems (Shield ID: DTE0017) merged into Decoy Artifacts and Systems (EAC0005).
+
+*Technique Name was Changed*
+
+For Techniques labeled &quot;Technique Name was Changed,&quot; a new Activity was created covering the same scope and content of a previous Technique with a new name. For example, Decoy Persona (Shield ID: DTE0015) is now Personas (EAC0012).
+
+*Technique Name was Changed and Scope was Broadened*
+
+ For Techniques labeled &quot;Technique Name was Changed,&quot; a new Activity was created covering a larger scope and content from a previous Technique with a new name. For example, PCAP Collection (Shield ID: DTE0028) is a component of Network Monitoring (EAC0002).
+
+**Step 2: Look at the deprecated Techniques to see what changed.** 
+
+This is where some manual effort will be required. Deprecated techniques are not as straightforward. For techniques labeled as &quot;Deprecated,&quot; we removed them from Engage without replacing them because we felt they did not fit into Engage. Often, these activities focused more broadly on good cyber hygiene practices, which are no longer in scope for Engage. For example, User Training (Shield ID: DTE0035) was removed because we felt this practice was not within the tighter scope of denial, deception, and adversary engagement.
+
+**Step 3: Review if the New Goals Categories Change Your Mappings.** 
+
+If you want to take full advantage of Engage, it is important to consider each goal in the context of a given goal it is mapped to. The implementation behind a given activity is influenced greatly by the goal it is mapped to. For example, Decoy Artifacts and Systems maps to both Expose and Affect. A Decoy Artifact intended to expose the adversary may be an interesting document with a tripwire. On the other hand, a Decoy Artifact mean to Affect an adversary may be an interesting document that is so large the adversary wastes time attempting to encrypt and exfiltrate the artifact. In both cases, the Decoy Artifact is an interesting document in the environment, but the differing goals result in different implementations of the document (one document has a tripwire, one is massive in size). Make sure each of your existing mappings accurately reflects not only the Activity definition, but also the corresponding Approach and Goal definitions.
 
 ### Moving Forward
 
