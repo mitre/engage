@@ -35,7 +35,7 @@ search_index: "/index.json"
 # alert-light: white
 # banner: "Banner text"
 # banner_type: "banner-color"
-banner: "MITRE Shield is now MITRE Engage v0.9 Beta."
+banner: "We welcome your feedback about MITRE Engage v0.9 Beta: engage@mitre.org"
 banner_type: "alert-success"
 
 # Build settings
