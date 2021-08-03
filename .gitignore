@@ -12,4 +12,5 @@ output/
 reports/
 Gemfile.lock
 public/
+_site/
 
