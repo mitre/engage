@@ -9,7 +9,7 @@ custom_css: default
 # Connect with Us
 
 ## Email
-You can email us as <engage@mitre.org> if you have questions or want to know how to get involved. We are always open to collaborative research opportunities, running joint adversary engagement operations, or helping organizations adopt adversary engagement. No matter your interests, we would love to hear from you.
+You can email us at <engage@mitre.org> if you have questions or want to know how to get involved. We are always open to collaborative research opportunities, running joint adversary engagement operations, or helping organizations adopt adversary engagement. No matter your interests, we would love to hear from you.
 
 ## LinkedIn
 Connect with us on [LinkedIn](https://www.linkedin.com/showcase/mitre-engage). Note, as the community adjusts to these changes, the LinkedIn Account will be named MITRE Engage/MITRE Shield.
