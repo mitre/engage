@@ -1,1 +1,1 @@
-Sitemap: https://engage.pages.mitre.org/sitemap.xml
+Sitemap: https://engage.mitre.org/sitemap.xml

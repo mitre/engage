@@ -16,19 +16,40 @@ While MITRE Engage provides a framework for planning and discussing denial, dece
 
 If you have not already, [click here]({{ site.baseurl }}/resources/structure) for a full exploration of the structure and terminology you will find in Engage.
 
-To understand how your tooling aligns with Engage, we recommend beginning with the [Matrix]({{ site.baseurl }}/matrix) view. This will give you a highlevel view of the relationships across all of the Strategic and Engagement Activities. 
+To understand how your tooling aligns with Engage, we recommend beginning with the [Matrix]({{ site.baseurl }}/matrix) view. This will give you a high-level view of the relationships across all of the Strategic and Engagement Activities. 
 
-<u><b>Step 1: Look at the Goals. </b></u>
+<br>
+<details>
+<summary>
+<b>Step 1: Look at the Goals.</b>
+</summary>
+<br>
+<p>
+Next, we recommend you examine each specific <a href="{{ site.baseurl }}/goals">Goal</a>. Read each definition. Does your tooling help defenders achieve a similar goal?
+</p>
+</details>
+<br>
 
-Next, we recommend you examine each specific [Goal]({{ site.baseurl }}/goals). Read each definition. Does your tooling help defenders achieve a similar goal?
+<details>
+<summary>
+<b>Step 2: Look at the Approaches.</b>
+</summary>
+<br>
+<p>
+If you answered yes, look at each of the <a href="{{ site.baseurl }}/approaches">Approaches</a> associated with the relevant goal(s). Does your tooling take a similar approach to achieve the desired outcome? 
+</p>
+</details>
+<br>
 
-<u><b>Step 2: Look at the Approaches. </b></u>
+<details>
+<summary>
+<b>Step 3: Look at the Activities.</b>
+</summary>
+<br>
+<p>
+If you answered yes again, take a look at each of the <a href="{{ site.baseurl }}/activities">Activities</a> associated with the relevant Approach(es). Does your tooling implement one of these Activities? 
 
-If you answered yes, look at each of the [Approaches]({{ site.baseurl }}/approaches) associated with the relavent goal(s). Does your tooling take a similar approach to achieve the desired outcome? 
-
-<u><b>Step 3: Look at the Activities. </b></u>
-
-If you answered yes again, take a look at each of the [Activities]({{ site.baseurl }}/activities) associated with the relavent Approach(es). Does your tooling immplement one of these Activities? 
-
-Whether or not your tool maps directly to an Engage activtity, we want to hear from you! In the future we would like to extend Engage to provide references to published examples of research, vendor products, etc that implement a given activity. While we do not want Engage to advocate for a specific product, or provide so many implementation details so as to give away tells for a tool, we do want to help the community identify available tooling. 
-
+Whether or not your tool maps directly to an Engage activtity, we want to hear from you! In the future we would like to extend Engage to provide references to published examples of research, vendor products, etc. that implement a given activity. While we do not want Engage to advocate for a specific product, or provide so many implementation details so as to give away tells for a tool, we do want to help the community identify available tooling. 
+</p>
+</details>
+<br>
