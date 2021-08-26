@@ -17,8 +17,6 @@ title: Engage
 email: engage@mitre.org
 description: >- # this means to ignore newlines until "baseurl:"
   Engage Adversary Engagement KB
-# baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://engage.mitre.org" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -35,7 +33,8 @@ search_index: "/index.json"
 # alert-light: white
 # banner: "Banner text"
 # banner_type: "banner-color"
-banner: "We welcome your feedback about MITRE Engage v0.9 Beta: engage@mitre.org"
+
+banner: "We welcome your feedback about MITRE Engage v0.9 Beta: Email us at <a href=mailto:engage@mitre.org>engage@mitre.org</a>"
 banner_type: "alert-success"
 
 # Build settings
