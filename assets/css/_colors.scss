@@ -73,7 +73,7 @@ $colors: (
 // see https://codepen.io/gunnarbittersmann/pen/BoovjR for explanation of why we have to escape # for the background image
 @function escape-color($color) {
     $hex: ie-hex-str($color);
-    @return "%23"+ str-slice($string: #{$hex}, $start-at: 4); //skip #AA in #AARRGGBB
+    @return "%23"+ str-slice($string:  unquote("#{$hex}"), $start-at: 4); //skip #AA in #AARRGGBB
 }
 
 // used in 404 and contact templates
