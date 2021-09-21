@@ -257,10 +257,15 @@ a {
         a {
             color: white;
         }
-        background: gray;
+        background: color(secondary);
+        &.empty {
+            background: white;
+            border: none;
+            border-bottom-style: hidden !important;
+        }
     }
 
-    tr {
+    td {
         &.support {
             background-color:lightgray;
         }
@@ -270,11 +275,10 @@ a {
                 color: white;
             }
         }
-        color:#4f7cac;
-        // height: 73px;
-    }
-
-    td {
+        &.empty {
+            background: white;
+            border: none;
+        }
         vertical-align: middle;
     }
 }

@@ -11,16 +11,16 @@
   <div class="col-sm-4 col-xs-12 pr-lg-5">
     <table class="table engage-matrix table-bordered table-responsive" style="border-radius:10px;">
       <thead>
-        <th colspan="2">Legend</th>
+        <tr><th colspan="2">Legend</th></tr>
       </thead>
       <tbody>
         <tr>
           <td>Engagement Actions Taken Against Your Adversary</td>
           <td>White</td>
         </tr>
-        <tr class="support">
-          <td>Strategic Actions Taken to Support Operational Strategy</td>
-          <td>Gray</td>
+        <tr>
+          <td class="support">Strategic Actions Taken to Support Operational Strategy</td>
+          <td class="support">Gray</td>
         </tr>
       </tbody>
     </table>
@@ -28,103 +28,70 @@
 </div>
 
 
-<div class="container-fluid pt-5">
+<div class="container-fluid pt-4">
   <div class="row flex-nowrap">
-    <div class="col-2" style="width: 12.5%;flex: 0 0 12.5%;max-width: 12.5%;">
+    <div class="col-12">
       <div class="table-responsive">
       <table class="table engage-matrix table-bordered">
         <thead>
-          <th>
-            <a href="{{ site.baseurl }}/goals/{{site.data.goals[3].id}}">{{ site.data.goals[3].name }}</a>
-          </th>
+          <tr>
+            <th>
+              <a href="{{ site.baseurl }}/goals/{{site.data.goals[3].id}}">{{ site.data.goals[3].name }}</a>
+            </th>
+            <th class="empty"><!-- empty gap --></th>
+            <th colspan="2">
+              <a href="{{ site.baseurl }}/goals/{{site.data.goals[0].id}}">{{ site.data.goals[0].name }}</a>
+            </th>
+            <th colspan="3">
+              <a href="{{ site.baseurl }}/goals/{{site.data.goals[1].id}}">{{ site.data.goals[1].name }}</a>
+            </th>
+            <th colspan="2">
+              <a href="{{ site.baseurl }}/goals/{{site.data.goals[2].id}}">{{ site.data.goals[2].name }}</a>
+            </th>
+            <th class="empty"><!-- empty gap --></th>
+            <th>
+              <a href="{{ site.baseurl }}/goals/{{site.data.goals[4].id}}">{{ site.data.goals[4].name }}</a>
+            </th>
+          </tr>
         </thead>
         <tbody>
           {%- for row in site.data.approach_matrix -%}
-          {% assign row_subset = row | slice:7 %}
+          {% assign engagement = row | slice:0, 7 %}
+          {% assign prepare = row | slice:7 %}
+          {% assign understand = row | slice:8 %}
           {%- if forloop.index == 1 -%}
-          <tr class="approach">
-            {%- for h in row_subset -%}
-            <td><a href="{{ site.baseurl }}/approaches/{{h[0]}}">{{ h[1] }}</a></td>
+          <tr>
+            <td class="approach"><a href="{{ site.baseurl }}/approaches/{{prepare[0][0]}}">{{ prepare[0][1] }}</a></td>
+            <td class="empty"><!-- empty gap --></td>
+            {%- for h in engagement -%}
+            <td class="approach"><a href="{{ site.baseurl }}/approaches/{{h[0]}}">{{ h[1] }}</a></td>
             {%- endfor -%}
-          </tr>
-          {%- else -%}
-          <tr class="support">
-            {%- for t in row_subset -%}
-            {%- if t != nil -%}
-            <td><a href="{{ site.baseurl }}/activities/{{t.id}}">{{ t.name }}</a></td>
-            {%- endif -%}
-            {%- endfor -%}
-          </tr>
-          {%- endif -%}
-          {%- endfor -%}
-        </tbody>
-      </table>
-      </div>
-    </div>
-    <div class="col-8" style="width: 75%;flex: 0 0 75%;max-width: 75%;">
-      <div class="table-responsive">
-      <table class="table engage-matrix table-bordered">
-        <thead>
-          <th colspan="2">
-            <a href="{{ site.baseurl }}/goals/{{site.data.goals[0].id}}">{{ site.data.goals[0].name }}</a>
-          </th>
-          <th colspan="3">
-            <a href="{{ site.baseurl }}/goals/{{site.data.goals[1].id}}">{{ site.data.goals[1].name }}</a>
-          </th>
-          <th colspan="2">
-            <a href="{{ site.baseurl }}/goals/{{site.data.goals[2].id}}">{{ site.data.goals[2].name }}</a>
-          </th>
-        </thead>
-        <tbody>
-          {%- for row in site.data.approach_matrix -%}
-          {% assign row_subset = row | slice:0, 7 %}
-          {%- if forloop.index == 1 -%}
-          <tr class="approach">
-            {%- for h in row_subset -%}
-            <td><a href="{{ site.baseurl }}/approaches/{{h[0]}}">{{ h[1] }}</a></td>
-            {%- endfor -%}
+            <td class="empty"><!-- empty gap --></td>
+            <td class="approach"><a href="{{ site.baseurl }}/approaches/{{understand[0][0]}}">{{ understand[0][1] }}</a></td>
           </tr>
           {%- else -%}
           <tr>
-          {%- for t in row_subset -%}
-
-          {%- if t != nil -%}
-          <td><a href="{{ site.baseurl }}/activities/{{t.id}}">{{ t.name }}</a></td>
-          {%- else -%}
-          <td style="border: 0px"></td>
-          {%- endif -%}
-          {%- endfor -%}
-          </tr>
-          {%- endif -%}
-          {%- endfor -%}
-        </tbody>
-      </table>
-      </div>
-    </div>
-    <div class="col-2" style="width: 12.5%;flex: 0 0 12.5%;max-width: 12.5%;">
-      <div class="table-responsive">
-      <table class="table engage-matrix table-bordered">
-        <thead>
-          <th>
-            <a href="{{ site.baseurl }}/goals/{{site.data.goals[4].id}}">{{ site.data.goals[4].name }}</a>
-          </th>
-        </thead>
-        <tbody>
-          {%- for row in site.data.approach_matrix -%}
-          {% assign row_subset = row | slice:8 %}
-          {%- if forloop.index == 1 -%}
-          <tr class="approach">
-            {%- for h in row_subset -%}
-            <td><a href="{{ site.baseurl }}/approaches/{{h[0]}}">{{ h[1] }}</a></td>
-            {%- endfor -%}
-          </tr>
-          {%- else -%}
-          <tr class="support">
-            {%- for t in row_subset -%}
+            {%- if prepare[0] != nil -%}
+            <td class="support"><a href="{{ site.baseurl }}/activities/{{prepare[0].id}}">{{ prepare[0].name }}</a></td>
+            {%- else -%}
+            <td class="empty"><!-- empty cell --></td>
+            {%- endif -%}
+            <td class="empty"><!-- empty gap --></td>
+            {%- for t in engagement -%}
             {%- if t != nil -%}
             <td><a href="{{ site.baseurl }}/activities/{{t.id}}">{{ t.name }}</a></td>
+            {%- else -%}
+            <td class="empty"></td>
             {%- endif -%}
             {%- endfor -%}
+            <td class="empty"><!-- empty gap --></td>
+            {%- if understand[0] != nil -%}
+            <td class="support">
+              <a href="{{ site.baseurl }}/activities/{{understand[0].id}}">{{ understand[0].name }}</a>
+            </td>
+            {%- else -%}
+            <td class="empty"></td>
+            {%- endif -%}
           </tr>
           {%- endif -%}
           {%- endfor -%}
