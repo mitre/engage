@@ -12,27 +12,32 @@ title: {{ page._name }}
     <p>
       {%- if page.description -%}
       {{ page.description }}
-      <br />
-      <br />
+      <br>
+      <br>
       {%- endif -%}
       {%- if page.long_description -%}
       {{ page.long_description }}
       {%- else -%}
 
-        When an adversary enagages in a specific behavior, they are vulnerable to expose an unintended weakness. By looking at each ATT&CK activity, we can examine the weaknesses revealed and identify an engagement activity or activities to exploit this weakness. The following table outlines the Adversary Vulnerabilities and Engagement Activities that are available to the defender when the adversary engages in {{ page._name }} behaviors.
+      When an adversary engages in a specific behavior, they are vulnerable to expose an unintended weakness. By
+      looking at each ATT&CK activity, we can examine the weaknesses revealed and identify an engagement activity or
+      activities to exploit this weakness. The following table outlines the Adversary Vulnerabilities and Engagement
+      Activities that are available to the defender when the adversary engages in {{ page._name }} behaviors.
       
       {%- endif -%}
     </p>
   </div>
   {%- include detail_card.html -%}
 </div>
-</br>
+<br>
 <table class="table table-bordered table-hover">
   <thead>
+  <tr>
     <th>ATT&CK® Technique<img class="external-icon" src="{{ site.baseurl }}/assets/img/external_link.png" /></th>
     <th>Adversary Vulnerability</th>
     <th>Engagement Activity</th>
     <th>Engagement Activity Description</th>
+  </tr>
   </thead>
   <tbody>
   {%- for row in site.data.attack_mapping -%}
@@ -43,7 +48,7 @@ title: {{ page._name }}
     {%- for tactic in technique.attack_tactics -%}
     {%- assign page_tactic =page._name| downcase | replace: " ", "-" -%}
     {%- if tactic == page_tactic -%}
-    {%- assign activtiy = site.data.activities | where: "name", row.eac | first -%}
+    {%- assign activity = site.data.activities | where: "name", row.eac | first -%}
     <tr>
       <td>
         <a href="https://attack.mitre.org/techniques/{{ row.attack_id }}">
@@ -54,9 +59,9 @@ title: {{ page._name }}
       </td>
       <td>{{ row.eav }}</td>
       <td>
-        <a href="{{ site.baseurl }}/activities/{{activtiy.id}}">{{ row.eac }}</a>
+        <a href="{{ site.baseurl }}/activities/{{activity.id}}">{{ row.eac }}</a>
       </td>
-      <td>{{ activtiy.description }}</td>
+      <td>{{ activity.description }}</td>
     </tr>
     {%- endif -%}
     {%- endfor -%}
