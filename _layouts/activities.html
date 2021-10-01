@@ -22,18 +22,19 @@ title: page._name
 
 {%- if site.data.activity_details[page._id].type == "Engagement" -%}
 
-Whenever an adversary interacts with the environment, their actions reveal vulnerabilities. Defenders can utilize engagememnt activities to take advantege of such weaknesses.
+Whenever an adversary interacts with the environment, their actions reveal vulnerabilities. Defenders can utilize
+engagement activities to take advantage of such weaknesses.
 
 <br><br>
-The following table lists the adversary tactics on the left and the revealed vulnerability on the right that can be exploited by the defender using <b>{{page._name}}</b>.
+The following table lists the adversary tactics on the left and the revealed vulnerability on the right that can be
+exploited by the defender using <b>{{page._name}}</b>.
 <br><br>
 
 <table id="ttable" class="table table-bordered table-hover">
-    <thead>
+    <tr>
         <th>ATT&CK® Tactics<img class="external-icon" src="{{ site.baseurl }}/assets/img/external_link.png"/></th>
         <th>Adversary Vulnerability Presented</th>
-       
-    </thead>
+    </tr>
     <tbody>
         {%- for vulnerability in site.data.activity_details[page._id].vulnerabilities -%}
             <tr>
