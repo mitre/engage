@@ -1,4 +1,4 @@
-# MITRE | Engage Website
+# MITRE | Engage™ Website
 
 Approved for Public Release; Distribution Unlimited. Public Release Case Number 21-2294
 <br>

@@ -34,7 +34,7 @@ search_index: "/index.json"
 # banner: "Banner text"
 # banner_type: "banner-color"
 
-banner: "We welcome your feedback about MITRE Engage v0.9 Beta: Email us at <a href=mailto:engage@mitre.org>engage@mitre.org</a>"
+banner: "We welcome your feedback about MITRE Engage&trade; v0.9 Beta: Email us at <a href=mailto:engage@mitre.org>engage@mitre.org</a>"
 banner_type: "alert-success"
 
 # Build settings

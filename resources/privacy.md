@@ -12,13 +12,13 @@ custom_css: default
 
 The MITRE Corporation ("MITRE") respects the privacy of its website users. 
 
-This Privacy Policy explains the types of information collected by MITRE Engage; from website visitors ("User") or that you provide to MITRE through other means, such as via e-mail and web forms (collectively "Site"), and how MITRE uses, shares, protects, and retains that information. By visiting the Site, you understand and agree to terms outlined in this Privacy Policy. 
+This Privacy Policy explains the types of information collected by MITRE Engage&trade;; from website visitors ("User") or that you provide to MITRE through other means, such as via e-mail and web forms (collectively "Site"), and how MITRE uses, shares, protects, and retains that information. By visiting the Site, you understand and agree to terms outlined in this Privacy Policy. 
 
 ## Information Collected from Cookies on Web Traffic Reporting and Content Tools
 
 "Cookies" are data that may be sent to your web browser and stored on your computer. Most web browsers can be configured not to accept cookies, or to notify you if a cookie is sent to you. If you wish not to have cookies set during your visit to this MITRE managed Site, you can disable them in your web browser. 
 
-The MITRE Engage website is hosted on GitHub&reg;. MITRE and GitHub use a free third-party software service called Google Analytics&reg; to capture and analyze non-personally identifiable website usage information. 
+The MITRE Engage&trade; website is hosted on GitHub&reg;. MITRE and GitHub use a free third-party software service called Google Analytics&reg; to capture and analyze non-personally identifiable website usage information. 
 
 MITRE logs all accesses and the following information is recorded for each Site user: IP address, date and time of access, the requested URL, the referring URL (if provided by the Web browser), and the browser type (if provided by the Web browser). The IP address and its associated domain name (if any) are used to determine broad demographic information. The IP address may be used to track how users navigate through the Site. 
 

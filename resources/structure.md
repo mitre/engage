@@ -1,12 +1,12 @@
 ---
 
 layout: default
-title: MITRE Engage Structure
+title: MITRE Engage&trade; Structure
 custom_css: default
 
 ---
 
-## MITRE Engage Terminology
+## MITRE Engage&trade; Terminology
 
 A goal for Engage was to employ enough structure and rigor to be useful scientifically to the practitioner, without
 becoming needlessly rigid or complex. We began with terminology found in the
@@ -31,11 +31,11 @@ We modified those terms to fit the domain of cyber-based adversary engagement:
 
 - **Goals**: The big objectives you would like to accomplish.
 
-- **Approaches**: The methods you use to make progress toward your goals. Engage uses the term *Approaches* to refer to
+- **Approaches**: The methods used to make progress toward your goals. Engage uses the term *Approaches* to refer to
   Tactics like those described in ATT&CK®. We use the term Approaches instead of Tactics to disambiguate when we refer
   Engage Approaches versus ATT&CK® Tactics.
 
-- **Activities**: The concrete activities you use to make progress towards each approach. Engage uses the term 
+- **Activities**: The concrete activities used to make progress towards each approach. Engage uses the term 
   *Activities* to refer to Techniques like those described in ATT&CK®. We use the term Activities instead of Techniques
   to disambiguate between Engage Activities and ATT&CK® Techniques.
 
@@ -70,7 +70,7 @@ Every Goal, Approach, and Activity has a unique ID.
 * **S**trategic **AC**tivities begin with **SAC**
 * **E**ngagement **AC**tivities begin with **EAC**
 
-## MITRE Engage ATT&CK® Mappings
+## MITRE Engage&trade; ATT&CK® Mappings
 
 By mapping the various Engagement Activities to ATT&CK®, we can ensure that each activity in Engage is driven by
 observed adversary behavior. Each mapping is broken down as follows:
@@ -80,13 +80,13 @@ observed adversary behavior. Each mapping is broken down as follows:
 * Engagement Activity: The action the defender can take to take advantage of the vulnerability the adversary has
   exposed.
 
-In our first release of MITRE Engage, we have chosen not to include any specific activity implementations or use cases
-in these mappings. To provide some guidance, we have included expanded definitions for each Activity including concrete
-examples. We hope these definitions will provide some examples of the art of the possible. If you have questions, please
-reach out! We would be happy to share our past operational implementations or discuss your ideas.
+In our first release of MITRE Engage&trade;, we have chosen not to include any specific activity implementations or use 
+cases in these mappings. To provide some guidance, we have included expanded definitions for each Activity including 
+concrete examples. We hope these definitions will provide some examples of the art of the possible. If you have 
+questions, please reach out! We would be happy to share our past operational implementations or discuss your ideas.
 
 In the future, we hope to find new ways to dive into specific implementations, including collecting open source examples
 of activity implementations, either from vendor products or individual practitioners.
 
 <!-- ## Papers
-Coming soon with the official MITRE Engage release later this fall! -->
+Coming soon with the official MITRE Engage&trade; release later this fall! -->
