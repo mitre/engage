@@ -45,7 +45,7 @@ We modified those terms to fit the domain of cyber-based adversary engagement:
 
 ## MITRE Engage Matrix Structure
 
-The Engage [Matrix]({{ site.baseurl }}/resources/matrix) consists of the following core components:
+The Engage [Matrix]({{ site.baseurl }}/matrix) consists of the following core components:
 
 * Across the top of the matrix are the Engage *Goals*.
 * The next row down contains the Engage *Approaches*.

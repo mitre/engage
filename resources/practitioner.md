@@ -48,7 +48,7 @@ Using the previously developed <a href="{{ site.baseurl }}/activities/SAC0004/">
 </summary>
 <br>
 <p>
-Guided by the chosen <a href="{{ site.baseurl }}/activities/SAC0001/">Strategic Goal</a> and using the previously developed <a href="{{ site.baseurl }}/activities/SAC0004/">Threat Model</a>, you can use the Engage <a href="{{ site.baseurl }}/attack_mappings">ATT&CK® Mappings</a> to examine the various Tactics and Techniques associated with the adversary. For every Technique, we have identified one or more adversary vulnerabilities that are exposed, and the Engagement activity you can utilize to take advantage of the vulnerability. Using these mappings, you can begin to create the operational <a href="{{ site.baseurl }}/activities/SAC0003/">Storyboard</a>. This outline should help identify what activities you will use to encourage the adversary to take the desired actions.
+Guided by the chosen <a href="{{ site.baseurl }}/activities/SAC0001/">Strategic Goal</a> and using the previously developed <a href="{{ site.baseurl }}/activities/SAC0004/">Threat Model</a>, you can use the Engage <a href="{{ site.baseurl }}/attack_mapping/">ATT&CK® Mappings</a> to examine the various Tactics and Techniques associated with the adversary. For every Technique, we have identified one or more adversary vulnerabilities that are exposed, and the Engagement activity you can utilize to take advantage of the vulnerability. Using these mappings, you can begin to create the operational <a href="{{ site.baseurl }}/activities/SAC0003/">Storyboard</a>. This outline should help identify what activities you will use to encourage the adversary to take the desired actions.
 </p>
 </details>
 
