@@ -26,8 +26,6 @@
     </table>
   </div>
 </div>
-
-
 <div class="container-fluid pt-4">
   <div class="row flex-nowrap">
     <div class="col-12">
@@ -35,21 +33,26 @@
       <table class="table engage-matrix table-bordered">
         <thead>
           <tr>
-            <th>
+            <th data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}'
+                title="{{ site.data.goals[3].description }}">
               <a href="{{ site.baseurl }}/goals/{{site.data.goals[3].id}}">{{ site.data.goals[3].name }}</a>
             </th>
             <th class="empty"><!-- empty gap --></th>
-            <th colspan="2">
+            <th colspan="2" data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' data-placement="bottom"
+                title="{{ site.data.goals[0].description }}">
               <a href="{{ site.baseurl }}/goals/{{site.data.goals[0].id}}">{{ site.data.goals[0].name }}</a>
             </th>
-            <th colspan="3">
+            <th colspan="3" data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' data-placement="bottom"
+                title="{{ site.data.goals[1].description }}">
               <a href="{{ site.baseurl }}/goals/{{site.data.goals[1].id}}">{{ site.data.goals[1].name }}</a>
             </th>
-            <th colspan="2">
+            <th colspan="2" data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' data-placement="bottom"
+                title="{{ site.data.goals[2].description }}">
               <a href="{{ site.baseurl }}/goals/{{site.data.goals[2].id}}">{{ site.data.goals[2].name }}</a>
             </th>
             <th class="empty"><!-- empty gap --></th>
-            <th>
+            <th data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' data-placement="bottom"
+                title="{{ site.data.goals[4].description }}">
               <a href="{{ site.baseurl }}/goals/{{site.data.goals[4].id}}">{{ site.data.goals[4].name }}</a>
             </th>
           </tr>
@@ -61,32 +64,54 @@
           {% assign understand = row | slice:8 %}
           {%- if forloop.index == 1 -%}
           <tr>
-            <td class="approach"><a href="{{ site.baseurl }}/approaches/{{prepare[0][0]}}">{{ prepare[0][1] }}</a></td>
+            {% assign h_id = prepare[0][0] %}
+            {% assign h_description = site.data.approaches_details[h_id].description %}
+            <td class="approach" data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' data-placement="bottom"
+                title="{{ h_description }}">
+              <a href="{{ site.baseurl }}/approaches/{{prepare[0][0]}}">{{ prepare[0][1] }}</a>
+            </td>
             <td class="empty"><!-- empty gap --></td>
             {%- for h in engagement -%}
-            <td class="approach"><a href="{{ site.baseurl }}/approaches/{{h[0]}}">{{ h[1] }}</a></td>
+            {% assign h_id = h[0] %}
+            {% assign h_description = site.data.approaches_details[h_id].description %}
+            <td class="approach" data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' data-placement="bottom"
+                title="{{ h_description }}">
+              <a href="{{ site.baseurl }}/approaches/{{h[0]}}">{{ h[1] }}</a>
+            </td>
             {%- endfor -%}
             <td class="empty"><!-- empty gap --></td>
-            <td class="approach"><a href="{{ site.baseurl }}/approaches/{{understand[0][0]}}">{{ understand[0][1] }}</a></td>
+            {% assign h_id = understand[0][0] %}
+            {% assign h_description = site.data.approaches_details[h_id].description %}
+            <td class="approach" data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' data-placement="bottom"
+                title="{{ h_description }}">
+              <a href="{{ site.baseurl }}/approaches/{{understand[0][0]}}">{{ understand[0][1] }}</a>
+            </td>
           </tr>
           {%- else -%}
           <tr>
             {%- if prepare[0] != nil -%}
-            <td class="support"><a href="{{ site.baseurl }}/activities/{{prepare[0].id}}">{{ prepare[0].name }}</a></td>
+            <td class="support" data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' data-placement="bottom"
+                title="{{ prepare[0].description }}">
+              <a href="{{ site.baseurl }}/activities/{{prepare[0].id}}">{{ prepare[0].name }}</a>
+            </td>
             {%- else -%}
             <td class="empty"><!-- empty cell --></td>
             {%- endif -%}
             <td class="empty"><!-- empty gap --></td>
             {%- for t in engagement -%}
             {%- if t != nil -%}
-            <td><a href="{{ site.baseurl }}/activities/{{t.id}}">{{ t.name }}</a></td>
+            <td data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' data-placement="bottom"
+                title="{{ t.description }}">
+              <a href="{{ site.baseurl }}/activities/{{t.id}}">{{ t.name }}</a>
+            </td>
             {%- else -%}
             <td class="empty"></td>
             {%- endif -%}
             {%- endfor -%}
             <td class="empty"><!-- empty gap --></td>
             {%- if understand[0] != nil -%}
-            <td class="support">
+            <td class="support" data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' data-placement="bottom"
+                title="{{ understand[0].description }}">
               <a href="{{ site.baseurl }}/activities/{{understand[0].id}}">{{ understand[0].name }}</a>
             </td>
             {%- else -%}
