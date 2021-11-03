@@ -49,7 +49,7 @@ If you answered yes, look at each of the <a href="{{ site.baseurl }}/approaches"
 <p>
 If you answered yes again, take a look at each of the <a href="{{ site.baseurl }}/activities">Activities</a> associated with the relevant Approach(es). Does your tooling implement one of these Activities? 
 
-Whether or not your tool maps directly to an Engage activtity, we want to hear from you! In the future we would like to extend Engage to provide references to published examples of research, vendor products, etc. that implement a given activity. While we do not want Engage to advocate for a specific product, or provide so many implementation details so as to give away tells for a tool, we do want to help the community identify available tooling. 
+Whether or not your tool maps directly to an Engage activity, we want to hear from you! In the future we would like to extend Engage to provide references to published examples of research, vendor products, etc. that implement a given activity. While we do not want Engage to advocate for a specific product, or provide so many implementation details so as to give away tells for a tool, we do want to help the community identify available tooling. 
 </p>
 </details>
 <br>
