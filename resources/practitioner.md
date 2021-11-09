@@ -25,7 +25,7 @@ Now that you understand the basic terms and structure of Engage, let's see one e
 </summary>
 <br>
 <p>
-The defender should <a href="{{ site.baseurl }}/activities/SAC0004/">Develop a Threat Model</a> of both the target adversary and their organization. A target adversary represent a threat that historically targets your organization or organizations like yours. The target adversary may represent a gap in the your threat intelligence orr they may be known to historically utilize TTPs that represent a gap in the your's current defenses. Regardless of the reason, you should have solid understanding of both the adversary and their own organiztion. 
+The defender should <a href="{{ site.baseurl }}/activities/SAC0004/">Develop a Threat Model</a> of both the target adversary and their organization. A target adversary represent a threat that historically targets your organization or organizations like yours. The target adversary may represent a gap in the your threat intelligence, or they may be known to historically utilize TTPs that represent a gap in your current defenses. Regardless of the reason, you should have solid understanding of both the adversary and their own organization. 
 </p>
 </details>
 <br>
