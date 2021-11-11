@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: Using MITRE Engage
+title: Using MITRE Engage&trade;
 custom_css: default
 
 ---
@@ -12,7 +12,7 @@ custom_css: default
 Using the [Matrix]({{ site.baseurl }}/matrix) view, you can explore how the various [Goals]({{ site.baseurl }}/goals), [Approaches]({{ site.baseurl }}/approaches), and [Activities]({{ site.baseurl }}/activities) help you to design and structure your adversary engagement operations. Engage provides the cyber defender with a common language for planning and discussing engagement operations.
 
 ### Learn More
-Whether you are planning to run a single operation for research purposes or intend to undertake a series of operations to generate a continuous threat intelligence feed, MITRE Engage can help. 
+Whether you are planning to run a single operation for research purposes or intend to undertake a series of operations to generate a continuous threat intelligence feed, MITRE Engage&trade; can help. 
 
 If you have not already, [click here]({{ site.baseurl }}/resources/structure) for a full exploration of the structure and terminology you will find in Engage.
 

@@ -8,7 +8,7 @@ custom_css: default
 
 ## Contributing
 
-Thank you for your interest in contributing to MITRE Engage. Click [here](mailto:engage@mitre.org) to send us an email. Engage is in a constant state of development and we are always on the lookout for new information to include in the knowledge base. If you have found an issue, have general feedback, or would like to add additional content, then we would like to hear from you. Check out how to contact us [here]({{ site.baseurl }}/resources/contact).
+Thank you for your interest in contributing to MITRE Engage&trade;. Click [here](mailto:engage@mitre.org) to send us an email. Engage is in a constant state of development, and we are always on the lookout for new information to include in the knowledge base. If you have found an issue, have general feedback, or would like to add additional content, then we would like to hear from you. Check out how to contact us [here]({{ site.baseurl }}/resources/contact).
 
 Depending on what you are contributing, we ask that you review the requirements below and provide the information that is relevant to what you are submitting. Once you have submitted your material, the Engage team will review it and respond with our findings. This review process might take some time, so we ask for your patience.
 

@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: Using MITRE Engage
+title: Using MITRE Engage&trade;
 custom_css: default
 
 ---
@@ -12,7 +12,7 @@ Using the [Matrix]({{ site.baseurl }}/matrix) view, you can explore how the vari
 
 ### Learn More
 
-MITRE Engage seeks to help the CISOs, and other security decision makers, understand how denial, deception, and adversary engagement fit into the organization's current cyber strategy.  
+MITRE Engage&trade; seeks to help the CISOs, and other security decision makers, understand how denial, deception, and adversary engagement fit into the organization's current cyber strategy.  
 
 To get started, [click here]({{ site.baseurl }}/resources/structure) to familiarize yourself with the Engage structure and terminology. 
 
