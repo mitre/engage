@@ -4,37 +4,11 @@ Approved for Public Release; Distribution Unlimited. Public Release Case Number 
 <br>
 (c)2021 The MITRE Corporation. ALL RIGHTS RESERVED
 
+## See the live site at [engage.mitre.org](https://engage.mitre.org/)
 
+## Contact us
 
-## See the live site at https://engage.mitre.org/
+If you have comments or questions about the framework, if you are looking to contribute or collaborate, or if you just 
+want to chat about cyber deception, email us at engage@mitre.org.
 
-## Running Locally
-
-### Requirements
-
- - [Ruby](https://www.ruby-lang.org/) 2.5 or greater
-
-### Installation
-
-Install Jekyll and Bundler for Ruby:
-
-`gem install jekyll bundler`
-
-### Build
-
-Build the project's static content:
-
-`bundle install`
-
-### Launching the server
-
-Then, to launch the site locally:
-
-`bundle exec jekyll serve`
-
-(Optional) If you're doing development run with live updates:
-
-`bundle exec jekyll serve --incremental`
-
-### Browse
-Access the site at http://127.0.0.1:4000/
+For other ways to connect with us, see [engage.mitre.org/resources/contact](https://engage.mitre.org/resources/contact).
