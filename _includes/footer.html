@@ -4,6 +4,13 @@
             <!-- ENDSEARCH -->
             </div>
             <!-- End Main Content Div -->
+            <!-- START Bootstrap-Cookie-Alert -->
+            <div class="alert text-center tou-alert" role="alert">
+                Do you agree to the Terms of Use Agreement outlined in
+                <a href="{{ site.baseurl }}/resources/terms-of-use" target="_blank">this policy</a>?
+                <button type="button" class="btn btn-primary btn-sm accept-tou">I Agree</button>
+            </div>
+            <!-- END Bootstrap-Cookie-Alert -->
             <!-- Start Scripts -->
             <script src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js"></script>
             <script src="{{ site.baseurl }}/assets/js/popper.min.js"></script>
@@ -12,6 +19,7 @@
             <script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
             <script src="{{ site.baseurl }}/assets/js/site.js"></script>
             <script src="{{ site.baseurl }}/assets/js/search.js"></script>
+            <script src="{{ site.baseurl }}/assets/js/tou_accept.js"></script>
             <!-- End Scripts -->
             <!-- Start Search Modal -->
             <div id="search-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
