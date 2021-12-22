@@ -8,7 +8,7 @@ custom_css: default
 ## WELCOME TO MITRE ENGAGE&trade; 0.9 BETA
 Engage is a work in progress; MITRE is releasing it now because we think it is ready enough to stimulate conversations about denial, deception, adversary engagement, and the ways we defenders can use these technologies to change the game.
 
-We are planning to have our official V1 Launch this fall. Before the launch, we would like to gather as much feedback from the community as possible so that we can shape MITRE Engage as a community tool.
+Due to the tremendous outpouring of community responses to our beta release, the V1 launch has been pushed to early 2022 to give our team enough time to collect and incorporate this feedback.
 
 *Love it? Hate it? Want to just chat deception? [Contact Us]({{ site.baseurl }}/resources/contact).*
 
