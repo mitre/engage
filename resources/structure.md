@@ -23,7 +23,7 @@ We modified those terms to fit the domain of cyber-based adversary engagement:
 
 - **Cyber Denial**: Denial is the ability and effort to prevent or impair the collection of intelligence by an 
   adversary.<sup>[Heckman2015](https://www.amazon.com/Cyber-Denial-Deception-Counter-Information-ebook/dp/B017YMXR24/ref=sr_1_1?dchild=1&keywords=heckman+deception&qid=1627423788&sr=8-1)</sup>. 
-  Denial also supports the prevention or disruption of and adversary's attempt at achieving effects.
+  Denial also supports the prevention or disruption of an adversary's attempt at achieving effects.
 
 - **Cyber Deception**: The deceiver reveals deceptive facts and fictions to mislead the opponent, while concealing
   critical facts and fictions to prevent the opponent from forming the correct estimates or taking appropriate
