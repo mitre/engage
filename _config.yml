@@ -34,7 +34,7 @@ search_index: "/index.json"
 # banner: "Banner text"
 # banner_type: "banner-color"
 
-banner: "We welcome your feedback about MITRE Engage&trade; v0.9 Beta: Email us at <a href=mailto:engage@mitre.org>engage@mitre.org</a>"
+banner: "On February 28th, we will be launching Engage V1. You may experience some downtime as we transition to the new site. See our <a href=\"https://medium.com/mitre-engage/a-sneak-peak-at-mitre-engage-v1-692520b77d83\">blog post</a> for a sneak peek at the release."
 banner_type: "alert-success"
 
 # Build settings
