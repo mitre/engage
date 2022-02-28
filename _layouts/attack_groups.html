@@ -27,11 +27,15 @@ title: {{ page._name }}
 <br>
 <table class="table table-bordered table-hover">
   <thead>
-        <th>ATT&CK® Technique<img class="external-icon" src="{{ site.baseurl }}/assets/img/external_link.png"/></th>
-        <th>Adversary Vulnerability</th>
-        <th>Engagement Activity</th>
-        <th>Engagement Activity Description</th>
-    </thead>
+    <tr>
+      <th style="white-space:nowrap">
+        ATT&CK® Technique<img class="external-icon" src="{{ site.baseurl }}/assets/img/external_link.png"/>
+      </th>
+      <th>Adversary Vulnerability</th>
+      <th>Engagement Activity</th>
+      <th>Engagement Activity Description</th>
+    </tr>
+  </thead>
   <tbody>
     {%- for groups in site.data.attack_groups -%}
       {%- if groups.id == page._id -%}
@@ -50,6 +54,7 @@ title: {{ page._name }}
             <td>
               <a href="https://attack.mitre.org/techniques/{{ row.attack_id }}">
                 {{ row.attack_technique }}
+              </a>
             </td>
             <td>{{ row.eav }}</td>
 
